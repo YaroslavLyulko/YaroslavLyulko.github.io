@@ -8,16 +8,16 @@
 /* font-family: "MyriadProRegular"; */
 @font-face {
     font-family: "MyriadProRegular";
-    src: url(fonts/MyriadProRegular/MyriadProRegular.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/MyriadProRegular/MyriadProRegular.ttf); /* Путь к файлу со шрифтом */
 }
 /* font-family: "MyriadProBold"; */
 @font-face {
     font-family: MyriadProBold;
-    src: url(fonts/MyriadProBold/MyriadProBold.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/MyriadProBold/MyriadProBold.ttf); /* Путь к файлу со шрифтом */
 }
 
 body{
-    background-image: url("images/bg.jpg"); 
+    background-image: url("../img/bg.jpg"); 
 }
 
 .wrapper {
