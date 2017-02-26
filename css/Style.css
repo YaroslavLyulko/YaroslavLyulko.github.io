@@ -1,0 +1,115 @@
+﻿* 
+{
+  margin: 0;
+  padding: 0;
+}
+
+/* Код для подключения шрифта в /css/stylename.css */
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url(fonts/MyriadProRegular/MyriadProRegular.ttf); /* Путь к файлу со шрифтом */
+}
+/* font-family: "MyriadProBold"; */
+@font-face {
+    font-family: MyriadProBold;
+    src: url(fonts/MyriadProBold/MyriadProBold.ttf); /* Путь к файлу со шрифтом */
+}
+
+body{
+    background-image: url("images/bg.jpg"); 
+}
+
+.wrapper {
+    width: 500px;
+    margin: 0px auto;
+}
+
+h3{
+    font-family: MyriadProBold;
+    font-size: 18px;
+}
+
+.header-block {
+    border-bottom: 1px solid #c7c2c7;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.header-block h2{
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: bold;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.header-block .my-photo {
+    text-align: center;
+   }
+
+.header-block img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #8f8f8f;
+    margin-top: 30px;
+}
+
+.header-block .job-title {
+    font-family: Arial;
+    font-size:  14px;
+    color: #1f1f1f;
+    margin-top: 25px;
+}
+
+.reasons-block {
+    border-bottom: 1px solid #c7c2c7;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.reasons-block ul{
+    font-family: MyriadProRegular;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 52px;
+    line-height: 20px;
+}
+
+.contacts-block {
+    border-bottom: 1px solid #c7c2c7;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contacts-block .mob-number {
+    font-family: MyriadProRegular;
+    font-size: 14px;
+    padding-left: 36px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+}
+
+.contacts-block .vk-profile {
+    padding-left: 36px;
+    margin-top: 23px;
+}
+
+.contacts-block .vk-profile a {
+    font-family: MyriadProRegular;
+    font-size: 14px;
+    color: #0056d3;
+}
+
+.feedback-block {
+    margin-top: 20px;
+}
+
+.feedback-block p {
+    font-family: MyriadProRegular;
+    font-size: 14px;
+    padding-left: 36px;
+    margin-top: 24px;
+}
+
+
