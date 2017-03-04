@@ -21,15 +21,17 @@ body {
 .menu li {
   float: left;
   list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 11px;
   padding-bottom: 11px;
-  margin-left: 80px;
+  margin-left: 60px;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   }
 
   .menu li:first-child {
-  margin-left: 22px;
+  margin-left: 2px;
 }
 
 .menu li a {
