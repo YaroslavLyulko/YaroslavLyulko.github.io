@@ -7,16 +7,6 @@ body {
   padding: 50px 48px 50px 48px;
   width: 965px;
   background-color: #ffffff;
-  /*box-shadow: 5px 5px grey;*/
-}
-
-.header {
-  /*height: 126px;*/
-}
-
-.header .logo p {
-  /*font-family: Arial, Helvetica, sans-serif;
-  font-size: 48px;*/
 }
 
 .menu {
@@ -30,13 +20,16 @@ body {
 .menu li {
   float: left;
   list-style: none;
-  padding: 11px;
-  /*margin: 5px;*/
-  /*border-left: 1px solid #838383;
-  border-right: 1px solid #838383;*/
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-left: 80px;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   }
+
+  .menu li:first-child {
+  margin-left: 22px;
+}
 
 .menu li a {
   color: white;
@@ -46,7 +39,6 @@ body {
 }
 
 .menu li:hover {
-  /*display: block;*/
   background-color: #454545;
   border-left: 1px solid #838383;
   border-right: 1px solid #838383;
@@ -97,8 +89,6 @@ body {
 }
 
 .content-pic {
-  /*height: 398px;
-  border: 1px solid #c8c8c8;*/
   display: table-cell; 
   vertical-align: middle; 
   text-align: center; 
@@ -107,35 +97,66 @@ body {
   border: 1px solid #c8c8c8;
   }
 
-/*.content-pic img {
-  display: block; 
-  margin: 0 auto;
-}*/
+.content-text-info {
+  margin-top: 40px;
+}
+
+.content-text-info p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13.33px;
+  line-height: 1.6;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
 /*CONTAINER END*/
+.clearfix:after{
+  content: '';
+  clear: both;
+  display: block;
+}
 
 .footer {
-  clear: both;
-  position: relative;
-  overflow: hidden;
   margin-top: 60px; 
   height: 40px;
   background-color: #e1e1e1;
 }
 
-.footer li {
+.footer-menu {
+float: left;
+}
+
+.footer-menu li {
   float: left;
   list-style: none;
-  padding: 11px;
-  /*margin: 5px;*/
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-left: 90px;
   }
 
-.footer li a {
+.footer-menu li:first-child {
+  margin-left: 23px;
+}
+
+.footer-menu li a {
   color: #2c2c2c;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 13.33px;
 }
 
-.footer li a:hover {
-   text-decoration: underline;
+.footer-menu li a:hover {
+  text-decoration: underline;
+}
+
+.all-rights-reserved {
+  float: right;
+}
+
+.all-rights-reserved p {
+  display: block;
+  color: #2c2c2c;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13.33px;
+  padding: 13px 23px 12px 0px;
 }
