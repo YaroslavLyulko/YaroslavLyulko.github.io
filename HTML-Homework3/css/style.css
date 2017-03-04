@@ -9,6 +9,7 @@ body {
   background-color: #ffffff;
 }
 
+/*HEADER BEGIN*/
 .menu {
   margin-top: 32px; 
   height: 40px;
@@ -109,7 +110,7 @@ body {
   padding-right: 28px;
 }
 
-/*CONTAINER END*/
+/*FOOTER BEGIN*/
 .clearfix:after{
   content: '';
   clear: both;
