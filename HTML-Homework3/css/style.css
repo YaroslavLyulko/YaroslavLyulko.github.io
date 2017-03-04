@@ -101,6 +101,7 @@ body {
 .content-text-info {
   margin-top: 40px;
 }
+<<<<<<< HEAD
 
 .content-text-info p{
   font-family: 'Open Sans', sans-serif;
@@ -117,6 +118,24 @@ body {
   display: block;
 }
 
+=======
+
+.content-text-info p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13.33px;
+  line-height: 1.6;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+/*CONTAINER END*/
+.clearfix:after{
+  content: '';
+  clear: both;
+  display: block;
+}
+
+>>>>>>> refs/remotes/origin/master
 .footer {
   margin-top: 60px; 
   height: 40px;
