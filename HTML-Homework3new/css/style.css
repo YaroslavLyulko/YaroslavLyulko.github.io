@@ -13,32 +13,29 @@ body {
 .menu {
   margin-top: 32px; 
   height: 40px;
-  position: relative;
-  overflow: hidden;
   background-color: #565555;
 }
 
 .menu li {
   float: left;
   list-style: none;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  margin-left: 60px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: 34px;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   }
 
-  .menu li:first-child {
-  margin-left: 2px;
+.menu li:first-child {
+  margin-left: 0px;
 }
 
 .menu li a {
   color: white;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 14.67px;
+  line-height: 40px;
 }
 
 .menu li:hover {
@@ -72,7 +69,7 @@ body {
   color: #656363;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 13.33px;
 }
 
 .left-menu li:last-child {
@@ -101,13 +98,13 @@ body {
   }
 
 .content-text-info {
-  margin-top: 40px;
+  margin-top: 32px;
 }
 
 .content-text-info p{
   font-family: 'Open Sans', sans-serif;
   font-size: 13.33px;
-  line-height: 1.6;
+  line-height: 21.33px;
   padding-left: 28px;
   padding-right: 28px;
 }
@@ -126,14 +123,12 @@ body {
 }
 
 .footer-menu {
-float: left;
+  float: left;
 }
 
 .footer-menu li {
   float: left;
   list-style: none;
-  padding-top: 11px;
-  padding-bottom: 11px;
   margin-left: 90px;
   }
 
@@ -146,6 +141,7 @@ float: left;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-size: 13.33px;
+  line-height: 40px;
 }
 
 .footer-menu li a:hover {
@@ -161,5 +157,6 @@ float: left;
   color: #2c2c2c;
   font-family: 'Open Sans', sans-serif;
   font-size: 13.33px;
-  padding: 13px 23px 12px 0px;
+  padding-right: 25px;
+  line-height: 40px;
 }
