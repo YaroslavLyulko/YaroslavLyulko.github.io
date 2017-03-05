@@ -7,6 +7,7 @@ body {
   padding: 50px 48px 50px 48px;
   width: 965px;
   background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 /*HEADER BEGIN*/
@@ -36,6 +37,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14.67px;
   line-height: 40px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 
 .menu li:hover {
