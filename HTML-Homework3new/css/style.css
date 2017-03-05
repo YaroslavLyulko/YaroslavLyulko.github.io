@@ -7,7 +7,9 @@ body {
   padding: 50px 48px 50px 48px;
   width: 965px;
   background-color: #ffffff;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 5px 5px rgba(0,0,0,.3);
+  box-shadow: 0 5px 5px rgba(0,0,0,.3);
 }
 
 /*HEADER BEGIN*/
