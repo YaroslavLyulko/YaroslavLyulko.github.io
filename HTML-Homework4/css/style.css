@@ -1,263 +1,254 @@
 body {
-    background-image: url("../img/background.png");
+  background-image: url("../img/background.png");
+  background-position: 0px -38px;
 }
 
 .wrapper {
-    width: 1000px;
-    /*height: 991px;*/
-    height: 100%;
-    background-color: #ffffff;
-    margin: 0 auto;
-    /*background-image: url("../img/white_main.png");*/
-    position: relative;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 1000px;
+  height: 100%;
+  background-color: #ffffff;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.header {
-    height: 175px;
-    position: relative;
+header {
+  height: 175px;
+  position: relative;
 }
 
-.header img {
-    position: absolute;
-    left: 40px;
-    bottom: 0;
+header img {
+  position: absolute;
+  left: 40px;
+  bottom: 0;
 }
 
-.header .logo-title {
-    position: absolute;
-    left: 112px;
-    bottom: 50px;
-    color: #128aa7;
-    font-family: Tahoma;
-    font-size: 12px;
+header .logo-title {
+  position: absolute;
+  left: 112px;
+  bottom: 50px;
+  color: #128aa7;
+  font-family: Tahoma;
+  font-size: 12px;
 }
 
 .contacts {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 170px;
-    height: 77px;
-}
-
-.contacts p {
-    color: #128aa7;
-    font-family: Tahoma;
-    font-size: 12px;
-    padding-top: 7px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 170px;
+  height: 77px;
 }
 
 .contacts .our-contacts {
-    font-weight: 600;
+  font-weight: 600;
+}
+
+.contacts p {
+  color: #128aa7;
+  font-family: Tahoma;
+  font-size: 12px;
+  padding-top: 7px;
 }
 
 .countries {
-    position: absolute;
-    right: 35px;
-    bottom: 8px;
-    width: 360px;
-    height: 55px;
-    z-index: 1;
+  position: absolute;
+  right: 35px;
+  bottom: 8px;
+  width: 360px;
+  height: 55px;
+  z-index: 1;
 }
+
 .navigation {
-    list-style: none;
+  list-style: none;
 }
 
 .navigation li {
-    float: left;
+  float: left;
 }
 
 .navigation li a {
-    display: block;
-    text-align: center;
-    padding-top: 43px;
-    color: #128aa7;
-    font-family: Tahoma;
-    font-size: 10px;
-    background-position: center top;
-    background-repeat: no-repeat;
-    width: 60px;
-    height: 15px;
+  display: block;
+  text-align: center;
+  padding-top: 43px;
+  color: #128aa7;
+  font-family: Tahoma;
+  font-size: 10px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 15px;
 }
 
 .navigation .india a {
-    background-image: url("../img/i_flag.png");
+  background-image: url("../img/i_flag.png");
 }
 
 .navigation .nepal a {
-    background-image: url("../img/n_flag.png");
+  background-image: url("../img/n_flag.png");
 }
 
 .navigation .tibet a {
-    background-image: url("../img/t_flag.png");
+  background-image: url("../img/t_flag.png");
 }
 
 .navigation .bhutan a {
-    background-image: url("../img/b_flag.png");
+  background-image: url("../img/b_flag.png");
 }
 
 .navigation .sri-lanka a {
-    background-image: url("../img/s_flag.png");
+  background-image: url("../img/s_flag.png");
 }
 
 .navigation .maldives a {
-    background-image: url("../img/m_flag.png");
+  background-image: url("../img/m_flag.png");
 }
 
 .photo {
-    border-top: 1px solid #128aa7;
-    position: relative;
-    height: 237px;
+  border-top: 1px solid #128aa7;
+  position: relative;
+  height: 237px;
 }
 
 .photo img {
-    position: absolute;
-    top: -213px;
-    left: -88px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
-
 
 /*MENU*/
 .menu {
-    display: block;
-    list-style: none;
-    width: 100%;
-    background-color: #323232;
-    border-bottom: 1px solid #000000;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    position: absolute;
-    top: 413px;
-    left: 0px;
-    z-index: 1;
-}
-
-ul:after {
-    display: block;
-    content: ' ';
-    clear: both;
-    float: none;
+  display: block;
+  list-style: none;
+  width: 100%;
+  background-color: #323232;
+  border-bottom: 1px solid #000000;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 413px;
+  left: 0px;
 }
 
 ul.menu > li {
-    float: left;
-    position: relative;
+  float: left;
+  position: relative;
 }
 
 ul.menu > li > a {
-    display: block;
-    line-height: 28px;
-    padding-left: 10px;
-    padding-right: 60px;
-    font-family: Tahoma;
-    font-size: 14px;
-    color: #ffffff;
-    background-color: #323232;
-    text-decoration: none;
+  display: block;
+  line-height: 28px;
+  padding-left: 10px;
+  padding-right: 60px;
+  font-family: Tahoma;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .delta {
-    padding-left: 9px;
+  padding-left: 9px;
 }
 
 ul.submenu {
-    display: none;
-    position: absolute;
-    width: 150px;
-    top: 29px;
-    left: 0;
-    background-color: white;
-    border: 1px solid #323232;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  display: none;
+  position: absolute;
+  width: 150px;
+  top: 28px;
+  left: 0;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  border-top: 1px solid #000000;
 }
 ul.submenu > li {
-    display: block;
+  display: block;
 }
 ul.submenu > li > a {
-    display: block;
-    padding-left: 10px;
-    font-family: Tahoma;
-    font-size: 14px;
-    color: #ffffff;
-    background-color: #323232;
-    text-decoration: none;
-    line-height: 24px;
+  display: block;
+  padding-left: 10px;
+  font-family: Tahoma;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #323232;
+  text-decoration: none;
+  line-height: 24px;
 }
 ul.submenu > li > a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul.menu > li:hover > ul.submenu {
-    display: block;
+  display: block;
 }
-
 
 /*CONTENT*/
-.fon {
-width: 1000px;
-overflow: hidden; /* чтобы лишее обрезалось */
+.content-container {
+  width: 1000px;
+  overflow: hidden;
 }
+
 .left-block {
-width: 208px;
-float: left;
-background-color: #edeef0;
-padding-bottom: 20000px;
-margin-bottom: -20000px;
+  width: 208px;
+  float: left;
+  background-color: #edeef0;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
 }
+
 .center-block {
-width: 584px;
-float: left;
-background: #ffffff;
-padding-bottom: 20000px;
-margin-bottom: -20000px;
+  width: 584px;
+  float: left;
+  background: #ffffff;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
 }
+
 .right-block {
-width: 208px;
-float: left;
-background-color: #edeef0;
-padding-bottom: 20000px;
-margin-bottom: -20000px;
+  width: 208px;
+  float: left;
+  background-color: #edeef0;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
 }
 
 .left-block h3 {
-    color: #424c43;
-    font-family: Tahoma;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 600;
-    padding-top: 42px;
-    padding-bottom: 8px;
+  color: #424c43;
+  font-family: Tahoma;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 42px;
+  padding-bottom: 8px;
 }
 
 .left-block p {
-    color: #424c43;
-    font-family: Tahoma;
-    font-size: 14px;
-    text-align: center;
-    line-height: 24px;
+  color: #424c43;
+  font-family: Tahoma;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
 }
 
 .right-block h3 {
-    color: #424c43;
-    font-family: Tahoma;
-    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    padding-top: 42px;
-    padding-bottom: 8px;
+  color: #424c43;
+  font-family: Tahoma;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 42px;
+  padding-bottom: 8px;
 }
 
 .right-block p {
-    color: #424c43;
-    font-family: Tahoma;
-    font-size: 14px;
-    text-align: center;
-    line-height: 24px;
+  color: #424c43;
+  font-family: Tahoma;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
 }
 
 
 .copy-right {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .copy-right p {
