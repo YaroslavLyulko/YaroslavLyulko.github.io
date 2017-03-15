@@ -1,0 +1,159 @@
+body {
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 36px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #07508f;
+  
+}
+
+.nav-item a {
+  display: block;
+  line-height: 36px;
+  /*background-color: #07508f;*/
+  padding-left: 12px;
+  padding-right: 12px;
+  font-family: 'Helvetica Neue', Tahoma, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: #60b5ed;
+}
+
+.nav-item span {
+  text-decoration: underline;
+}
+
+.nav-item a:hover {
+  color: #ffffff;
+  background-color: #4eabda;
+}
+
+.registration-form-wrapper {
+  width: 548px;
+  margin: 0 auto;
+}
+
+.registration-form-header {
+  width: 548px;
+  height: 62px;
+  background-color: rgba(0, 0, 0, 0.63);
+  margin-bottom: 2px;
+}
+
+.registration-form-header p {
+  display: block;
+  font-family: 'Helvetica Neue', Tahoma, sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 62px;
+  text-align:  center;
+}
+
+.registration-form {
+  width: 548px;
+  height: 613px;
+  background-color: rgba(0, 0, 0, 0.63);
+  margin: 0 auto;
+}
+
+.registration-form form {
+  margin: 0 auto;
+  width: 276px;
+}
+
+.registration-form fieldset {
+  border-top: 1px solid #666666;
+}
+
+.registration-form legend {
+  font-family: 'Helvetica Neue', Tahoma, sans-serif;
+  font-size: 14px;
+  color: #999999;
+  padding-left: 6px;
+  padding-right: 6px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding-left: 20px;
+  width: 256px;
+  background-color: #000000;
+  color: #cccccc;
+  height: 35px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #484948;
+  margin-top: 16px;
+  font-family: 'Helvetica Neue', Tahoma, sans-serif;
+  font-size: 14px;
+  align-content: center;
+}
+
+input[type="checkbox"] {
+  margin-top: 20px;
+}
+
+/*input[type="text"]:focus,*/
+input[type="text"]:hover,
+/*input[type="email"]:focus,*/
+input[type="email"]:hover,
+/*input[type="password"]:focus,*/
+input[type="password"]:hover {
+  background-color: #1b5288;
+  box-shadow: 0px 0px 5px 3px rgba(104, 154, 204, 1);
+  border-bottom: 1px solid #689acc; 
+  color: #ffffff;
+}
+
+.send-me label {
+  font-family: 'Helvetica Neue', Tahoma, sans-serif;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.create-account {
+  text-align: center;
+}
+
+.btn-login {
+  background: linear-gradient(to top, #ffffff, #4299d2);
+  border: none;
+  width: 276px;
+  height: 35px;
+  font-family: 'Helvetica Neue', Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 2px;
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
+
+.btn-create-account {
+  background: linear-gradient(to top, #ffffff, #4299d2);
+  border: none;
+  width: 149px;
+  height: 35px;
+  font-family: 'Helvetica Neue', Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.agree-notification label {
+  font-family: 'Helvetica Neue', Tahoma, sans-serif;
+  font-size: 11px;
+  color: #cccccc;
+  text-align: center;
+}
+
+
