@@ -128,7 +128,7 @@ input[type="password"]:hover {
   display: inline-block;
 }*/
 
-.login p {
+.login .ef {
   display: inline-block;
   width: 37px;
   /*height: 35px;*/
@@ -145,24 +145,43 @@ input[type="password"]:hover {
   border-right: 1px solid #203b70;
 }
 
-.btn-login {
-  background-image: linear-gradient(to bottom, #3E5891 0%, #2c4377 100%);
-  border: none;
-  border-top: 1px solid #7789bb;
-  border-left: 1px solid #7789bb;
-  /*background-image: url("../img/LogIn_with_Facebook.PNG");*/
+.login .text-btn-login {
+  display: inline-block;
   width: 237px;
-  height: 35px;
+  /*height: 35px;*/
+  line-height: 35px;
   font-family: 'Helvetica Neue', Tahoma, sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: #ffffff;
+  background-image: linear-gradient(to bottom, #3E5891 0%, #2c4377 100%);
+  border-top: 1px solid #7789bb;
   border-radius: 0 4px 4px 0;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #4b68ac;
+}
+
+.btn-login {
+  /*background-image: linear-gradient(to bottom, #3E5891 0%, #2c4377 100%);*/
+  border: none;
+  background-color: transparent;
+  /*border-top: 1px solid #7789bb;*/
+  /*border-left: 1px solid #7789bb;*/
+  /*background-image: url("../img/LogIn_with_Facebook.PNG");*/
+  /*width: 276px;
+  height: 35px;*/
+  /*font-family: 'Helvetica Neue', Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;*/
+  /*border-radius: 0 4px 4px 0;*/
   margin-top: 36px;
   margin-bottom: 32px;
-  display: inline-block;
-  border-left: 1px solid #4c68a9;
-  vertical-align: middle;
+  /*display: inline-block;*/
+  /*border-left: 1px solid #4c68a9;*/
+  /*vertical-align: middle;*/
+  padding: 0;
 }
 
 .create-account {
