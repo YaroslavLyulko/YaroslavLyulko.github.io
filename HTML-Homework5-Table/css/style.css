@@ -1,0 +1,38 @@
+td {
+  border: 5px solid grey;
+  text-align: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 50px;
+}
+
+.row1, .row4, .row5, .row6, .row7 {
+  height: 50px;
+}
+
+.row2, .row3 {
+  height: 100px;
+}
+
+.td100px {
+  width: 100px;
+}
+
+.darkorange {
+  background-color: darkorange;
+  color: white;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+}
