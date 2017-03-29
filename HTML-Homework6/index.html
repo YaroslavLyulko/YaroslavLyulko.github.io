@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework#6</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <div class="icon-handset">
+                <img src="img/icon-handset.png" alt="Icon Handset">
+            </div>
+            <a href="tel: +380441234567" class="phone-num">(044)123-45-67</a>
+            <a href="tel: +380445678910" class="phone-num">(044)567-89-10</a>
+            <form action="" class="authorization-form">
+                <img src="img/icon-authorization.png" alt="Icon Authorization">
+                <input type="text" placeholder="логин" name="LoginName">
+                <input type="password" placeholder="пароль" name="Pass">
+                <input type="submit" class="btn-enter" value="вход">
+                <input type="submit" class="btn-registration" value="регистрация">
+                <a href="#">забыли пароль?</a>
+            </form>
+            <!--<div class="top-nav">-->
+                <a href="#"><img src="img/home.png" alt="Home"></a>
+                <a href="#"><img src="img/site-map.png" alt="Site Map"></a>
+                <a href="#"><img src="img/letter.png" alt="Letter"></a>
+            <!--</div>-->
+            <img src="img/banner.jpg" alt="banner" class="banner">
+        </header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">О КОМПАНИИ</a></li>
+                <li><a href="#">ОПЛАТА</a></li>
+                <li><a href="#">ДОСТАВКА</a></li>
+                <li><a href="#">СТАТЬИ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+            <img src="img/icon-basket.png" alt="Icon Basket">
+            <p class="products">товаров:<span>0</span></p>
+            <p class="products">на сумму:<span>0,00 грн.</span></p>
+        </nav>
+        <div class="content-container clearfix">
+        <aside class="catalog">
+            <p>КАТАЛОГ ПРОДУКЦИИ:</p>
+            <ul>
+                <li>
+                    <div class="category-title"><p>ШИНЫ</p></div>
+                    <ul>
+                        <li><a href="#">Наименование 1</a></li>
+                        <li><a href="#">Наименование 2</a></li>
+                        <li><a href="#">Наименование 3</a></li>
+                        <li><a href="#">Наименование 4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="category-title"><p>ДИСКИ</p></div>
+                    <ul>
+                        <li><a href="#">Наименование 1</a></li>
+                        <li><a href="#">Наименование 2</a></li>
+                        <li><a href="#">Наименование 3</a></li>
+                        <li><a href="#">Наименование 4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="category-title"><p>БОЛТЫ</p></div>
+                    <ul>
+                        <li><a href="#">Наименование 1</a></li>
+                        <li><a href="#">Наименование 2</a></li>
+                        <li><a href="#">Наименование 3</a></li>
+                        <li><a href="#">Наименование 4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <figure>
+                <figcaption>Goodyear  Ultra <br> Grip Extreme</figcaption>
+                <p><img src="img/wheel.png" alt="Wheel"/></p>
+                <figcaption>90.00 грн.</figcaption>
+            </figure>
+            <figure>
+                <p><img src="img/wheel.png" alt="Wheel"/></p>
+                <figcaption>90.00 грн.</figcaption>
+            </figure>
+            <figure>
+                <p><img src="img/wheel.png" alt="Wheel"/></p>
+                <figcaption>90.00 грн.</figcaption>
+            </figure>
+            <figure>
+                <p><img src="img/wheel.png" alt="Wheel"/></p>
+                <figcaption>90.00 грн.</figcaption>
+            </figure>
+            <figure>
+                <p><img src="img/wheel.png" alt="Wheel"/></p>
+                <figcaption>90.00 грн.</figcaption>
+            </figure>
+            <figure>
+                <p><img src="img/wheel.png" alt="Wheel"/></p>
+                <figcaption>90.00 грн.</figcaption>
+            </figure>
+            <figure>
+                <p><img src="img/wheel.png" alt="Wheel"/></p>
+                <figcaption>90.00 грн.</figcaption>
+            </figure>
+            <figure>
+                <p><img src="img/wheel.png" alt="Wheel"/></p>
+                <figcaption>90.00 грн.</figcaption>
+            </figure>
+            <figure>
+                <p><img src="img/wheel.png" alt="Wheel"/></p>
+                <figcaption>90.00 грн.</figcaption>
+            </figure>
+        </main>
+        <aside class="filter">
+            <p>БРЕНДЫ:</p>
+            <form action="">
+                <p>ШИНЫ:</p>
+                <input type="checkbox" id="tires-brand1">
+                <label for="tires-brand1">Бренд 1</label>
+                <input type="checkbox" id="tires-brand2">
+                <label for="tires-brand2">Бренд 2</label>
+                <input type="checkbox" id="tires-brand3">
+                <label for="tires-brand3">Бренд 3</label>
+                <p>ДИСКИ:</p>
+                <input type="checkbox" id="discs-brand1">
+                <label for="discs-brand1">Бренд 1</label>
+                <input type="checkbox" id="discs-brand2">
+                <label for="discs-brand2">Бренд 2</label>
+                <input type="checkbox" id="discs-brand3">
+                <label for="discs-brand3">Бренд 3</label>
+                <input type="submit" class="btn-filter" value="ВЫБРАТЬ">
+            </form>
+        </aside>
+        </div>
+        <div class="brand-logo">
+            <img src="img/brand-logo-01.png" alt="Brand Logo 01"/>
+            <img src="img/brand-logo-02.png" alt="Brand Logo 02"/>
+            <img src="img/brand-logo-03.png" alt="Brand Logo 03"/>
+            <img src="img/brand-logo-04.png" alt="Brand Logo 04"/>
+            <img src="img/brand-logo-05.png" alt="Brand Logo 05"/>
+            <img src="img/brand-logo-06.png" alt="Brand Logo 06"/>
+            <img src="img/brand-logo-07.png" alt="Brand Logo 07"/>
+            <img src="img/brand-logo-08.png" alt="Brand Logo 08"/>
+        </div>
+        <footer>
+            <!--<div class="footer-nav">-->
+            <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <p>Создание сайта &copy; Global Vision</p>
+            <!--</div>-->
+        </footer>
+
+    </div>
+</body>
+
+</html>
