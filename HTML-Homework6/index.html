@@ -15,11 +15,12 @@
     <div class="wrapper">
 
         <header>
+            <div class="top-bar">
             <div class="icon-handset">
                 <img src="img/icon-handset.png" alt="Icon Handset">
             </div>
-            <a href="tel: +380441234567" class="phone-num">(044)123-45-67</a>
-            <a href="tel: +380445678910" class="phone-num">(044)567-89-10</a>
+            <a href="tel:+380441234567" class="phone-numbers pn1">(044)123-45-67</a>
+            <a href="tel:+380445678910" class="phone-numbers pn2">(044)567-89-10</a>
             <form action="" class="authorization-form">
                 <img src="img/icon-authorization.png" alt="Icon Authorization">
                 <input type="text" placeholder="логин" name="LoginName">
@@ -28,13 +29,13 @@
                 <input type="submit" class="btn-registration" value="регистрация">
                 <a href="#">забыли пароль?</a>
             </form>
-            <!--<div class="top-nav">-->
+            <div class="top-nav">
                 <a href="#"><img src="img/home.png" alt="Home"></a>
                 <a href="#"><img src="img/site-map.png" alt="Site Map"></a>
                 <a href="#"><img src="img/letter.png" alt="Letter"></a>
-            <!--</div>-->
+            </div>
+            </div>
             <img src="img/banner.jpg" alt="banner" class="banner">
-        </header>
         <nav class="main-nav">
             <ul>
                 <li><a href="#">О КОМПАНИИ</a></li>
@@ -47,9 +48,10 @@
             <p class="products">товаров:<span>0</span></p>
             <p class="products">на сумму:<span>0,00 грн.</span></p>
         </nav>
+        </header>
         <div class="content-container clearfix">
         <aside class="catalog">
-            <p>КАТАЛОГ ПРОДУКЦИИ:</p>
+            <header>КАТАЛОГ ПРОДУКЦИИ:</header>
             <ul>
                 <li>
                     <div class="category-title"><p>ШИНЫ</p></div>
@@ -84,7 +86,7 @@
             <figure>
                 <figcaption>Goodyear  Ultra <br> Grip Extreme</figcaption>
                 <p><img src="img/wheel.png" alt="Wheel"/></p>
-                <figcaption>90.00 грн.</figcaption>
+                <div class="product-price">90.00 грн.</div>
             </figure>
             <figure>
                 <p><img src="img/wheel.png" alt="Wheel"/></p>
@@ -120,7 +122,7 @@
             </figure>
         </main>
         <aside class="filter">
-            <p>БРЕНДЫ:</p>
+            <header>БРЕНДЫ:</header>
             <form action="">
                 <div class="category-title">
                     <p>ШИНЫ:</p>

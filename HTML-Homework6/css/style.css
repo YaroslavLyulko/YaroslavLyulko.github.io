@@ -3,7 +3,16 @@
   margin: 0 auto;
 }
 
+header {
+  margin-top: 17px;
+}
+
+.top-bar {
+  position: relative;  
+}
+
 .icon-handset {
+  margin-left: 8px;
   display: inline-block;
   width: 21px;
   height: 21px;
@@ -14,12 +23,22 @@
   line-height: 21px;
 }
 
-.phone-num {
+.phone-numbers {
   display: inline-block;
   font-family: Arial;
 	font-size: 18px;
 	color: #5e696d;
   text-decoration: none;
+  position: absolute;
+  top: 2px;
+}
+
+.pn1 {
+  left: 34px;
+}
+
+.pn2 {
+  left: 169px;
 }
 
 .authorization-form {
@@ -28,12 +47,21 @@
 	height: 26px;
 	border-radius: 4px/3px;
 	background-color: #b1bcc0;
-	box-shadow: 2px 3px 3px rgba(150,150,150,.75);
 	background-image: linear-gradient(to bottom, #206988, #114165 59%, #0c3256);
+  position: absolute;
+  left: 314px;
 } 
 
 .top-nav {
-  float: left;
+  width: 75px;
+	height: 19px;
+	border-radius: 10px/10px 10px 9px 9px;
+	background-color: #fff;
+	border: solid 1px #bdc4c7;
+  box-shadow: 0px 1px 6px -1px rgba(0,0,0,.75);
+  position: absolute;
+  top: 0px;
+  left: 826px;
 }
 
 input[type="text"],
