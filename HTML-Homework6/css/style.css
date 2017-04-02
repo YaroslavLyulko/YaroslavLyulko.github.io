@@ -85,7 +85,7 @@ input[type="password"] {
   margin-left: 4px;
 }
 
-/*input[type="submit"] {
+input[type="submit"] {
   color: #ffffff;
   font-family: 'Lucida Sans Unicode', sans-serif;
   font-size: 10.91px;
@@ -96,41 +96,10 @@ input[type="password"] {
   line-height: 26px;
   float: left;
   margin-left: 8px;
-}*/
-
-.btn-enter {
-  color: #ffffff;
-  font-family: 'Lucida Sans Unicode', sans-serif;
-  font-size: 10.91px;
-  background-color: transparent;
-  border-color: transparent;
-  padding: 0px 3px 0px 0px;
-  border: 0px;
-  line-height: 26px;
-  float: left;
-  margin-left: 8px;
-  
 }
 
-.btn-enter:after {
-  /*display: inline-block;*/
-  /*height: 5px;
-  width: 10px;*/
-  content: "asdasdsad";
+form:first-of-type input[type="submit"] {
   border-left: 1px solid #d3d9de;
-}
-
-.btn-registration {
-  color: #ffffff;
-  font-family: 'Lucida Sans Unicode', sans-serif;
-  font-size: 10.91px;
-  background-color: transparent;
-  border-color: transparent;
-  padding: 0px;
-  border: 0px;
-  line-height: 26px;
-  float: left;
-  margin-left: 8px;
 }
 
 .authorization-form a {
