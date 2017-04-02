@@ -284,6 +284,43 @@ main {
   width: 191px;
 }
 
+.filter-title {
+  width: 181px;
+	height: 25px;
+	border-radius: 12px/12px 12px 13px 13px;
+	background-color: #fff;
+	box-shadow: 2px 3px 3px rgba(150,150,150,.75);
+	border: solid 1px #79878d;
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.filter-title p {
+  position: absolute;
+  left: 28px;
+  font-family: 'Lucida Sans Unicode', sans-serif;
+  font-size: 14px;
+  color: #0c3256;
+  line-height: 25px;
+}
+
+.filter-title p:before {
+  position: absolute;
+  top: 2px;
+  left: -25px;
+  display: block;
+  content: '';
+  width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: #114165;
+	background-image: linear-gradient(to bottom, #206988, #114165 59%, #0c3256);
+  background-image: url("../img/icon-catalog.png"), none;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .filter input[type="checkbox"] {
   margin-top: 20px;
   margin-bottom: 20px;
