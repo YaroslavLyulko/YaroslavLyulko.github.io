@@ -52,6 +52,12 @@ header {
   left: 314px;
 } 
 
+.authorization-form img {
+  float: left;
+  margin-top: 4px;
+  margin-left: 6px;
+}
+
 .top-nav {
   width: 75px;
 	height: 19px;
@@ -74,20 +80,65 @@ input[type="password"] {
   color: #97a2a6;
   font-family: 'Lucida Sans Unicode', sans-serif;
   font-size: 10.91px;
+  float: left;
+  margin-top: 3px;
+  margin-left: 4px;
 }
 
-input[type="submit"] {
+/*input[type="submit"] {
   color: #ffffff;
   font-family: 'Lucida Sans Unicode', sans-serif;
   font-size: 10.91px;
   background-color: transparent;
   border-color: transparent;
+  padding: 0px;
+  border: 0px;
+  line-height: 26px;
+  float: left;
+  margin-left: 8px;
+}*/
+
+.btn-enter {
+  color: #ffffff;
+  font-family: 'Lucida Sans Unicode', sans-serif;
+  font-size: 10.91px;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0px 3px 0px 0px;
+  border: 0px;
+  line-height: 26px;
+  float: left;
+  margin-left: 8px;
+  
+}
+
+.btn-enter:after {
+  /*display: inline-block;*/
+  /*height: 5px;
+  width: 10px;*/
+  content: "asdasdsad";
+  border-left: 1px solid #d3d9de;
+}
+
+.btn-registration {
+  color: #ffffff;
+  font-family: 'Lucida Sans Unicode', sans-serif;
+  font-size: 10.91px;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0px;
+  border: 0px;
+  line-height: 26px;
+  float: left;
+  margin-left: 8px;
 }
 
 .authorization-form a {
   color: #bfbfbf;
   font-family: 'Lucida Sans Unicode', sans-serif;
   font-size: 12px;
+  line-height: 26px;
+  margin-left: 18px;
 }
 
 .banner {
