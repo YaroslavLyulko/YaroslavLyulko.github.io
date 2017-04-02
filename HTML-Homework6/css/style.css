@@ -58,18 +58,6 @@ header {
   margin-left: 6px;
 }
 
-.top-nav {
-  width: 75px;
-	height: 19px;
-	border-radius: 10px/10px 10px 9px 9px;
-	background-color: #fff;
-	border: solid 1px #bdc4c7;
-  box-shadow: 0px 1px 6px -1px rgba(0,0,0,.75);
-  position: absolute;
-  top: 0px;
-  left: 826px;
-}
-
 input[type="text"],
 input[type="password"] {
   width: 113px;
@@ -107,7 +95,24 @@ form:first-of-type input[type="submit"] {
   font-family: 'Lucida Sans Unicode', sans-serif;
   font-size: 12px;
   line-height: 26px;
-  margin-left: 18px;
+  margin-left: 12px;
+}
+
+.top-nav {
+  width: 75px;
+	height: 19px;
+	border-radius: 10px/10px 10px 9px 9px;
+	background-color: #fff;
+	border: solid 1px #bdc4c7;
+  box-shadow: 0px 1px 6px -1px rgba(0,0,0,.75);
+  position: absolute;
+  top: 0px;
+  left: 826px;
+}
+
+.top-nav a {
+  line-height: 19px;
+  padding-left: 7px;
 }
 
 .banner {
@@ -166,9 +171,51 @@ form:first-of-type input[type="submit"] {
   font-size: 12px;
 }
 
+.content-container {
+  margin-top: 158px;
+}
+
 /*Каталог продукции*/
 .catalog {
   float: left;
+  width: 189px;
+}
+
+.catalog-title {
+  width: 181px;
+	height: 25px;
+	border-radius: 12px/12px 12px 13px 13px;
+	background-color: #fff;
+	box-shadow: 2px 3px 3px rgba(150,150,150,.75);
+	border: solid 1px #79878d;
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.catalog-title p {
+  position: absolute;
+  left: 28px;
+  font-family: 'Lucida Sans Unicode', sans-serif;
+  font-size: 12.73px;
+  color: #114165;
+  line-height: 25px;
+}
+
+.catalog-title p:before {
+  position: absolute;
+  top: 2px;
+  left: -25px;
+  display: block;
+  content: '';
+  width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: #114165;
+	background-image: linear-gradient(to bottom, #206988, #114165 59%, #0c3256);
+  background-image: url("../img/icon-catalog.png"), none;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .category-title {
@@ -234,6 +281,7 @@ main {
 /*Правый sidebar*/
 .filter {
   float: left;
+  width: 191px;
 }
 
 .filter input[type="checkbox"] {
