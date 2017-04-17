@@ -21,6 +21,7 @@ header {
   background-image: linear-gradient(to top, #206988, #114165 59%, #0c3256);
   text-align: center;
   line-height: 21px;
+  margin-top: 4px;
 }
 
 .phone-numbers {
@@ -30,15 +31,16 @@ header {
 	color: #5e696d;
   text-decoration: none;
   position: absolute;
-  top: 2px;
+  top: 6px;
+  letter-spacing: 0.4px;
 }
 
 .pn1 {
-  left: 34px;
+  left: 32px;
 }
 
 .pn2 {
-  left: 169px;
+  left: 168px;
 }
 
 .authorization-form {
@@ -54,14 +56,14 @@ header {
 
 .authorization-form img {
   float: left;
-  margin-top: 4px;
-  margin-left: 6px;
+  margin-top: 5px;
+  margin-left: 7px;
 }
 
 input[type="text"],
 input[type="password"] {
-  width: 113px;
-	height: 16px;
+  width: 108px;
+	height: 14px;
 	background-color: #fff;
 	border: solid 1px #9ba1a3;
   padding-left: 4px;
@@ -71,6 +73,14 @@ input[type="password"] {
   float: left;
   margin-top: 3px;
   margin-left: 4px;
+}
+
+input[type="text"] {
+  margin-left: 4px;
+}
+
+input[type="password"] {
+  margin-left: 6px;
 }
 
 .btn-enter, .btn-registration{
@@ -83,15 +93,23 @@ input[type="password"] {
   border: 0px;
   line-height: 26px;
   float: left;
-  margin-left: 4px;
+}
+
+.btn-enter {
+  margin-left: 8px;
   margin-right: 4px;
+}
+
+.btn-registration {
+  margin-left: 4px;
+  letter-spacing: -0.2px;
 }
 
 i {
   float: left;
   color: #d3d9de;
   font-size: 10.91px;
-  line-height: 26px;
+  line-height: 24px;
   font-weight: bold;
 }
 
@@ -100,7 +118,7 @@ i {
   font-family: 'Lucida Sans Unicode', sans-serif;
   font-size: 12px;
   line-height: 26px;
-  margin-left: 12px;
+  margin-left: 21px;
 }
 
 .top-nav {
@@ -117,11 +135,22 @@ i {
 
 .top-nav a {
   line-height: 19px;
-  padding-left: 7px;
+}
+
+.tn1 {
+  padding-left: 8px;
+}
+
+.tn2 {
+  padding-left: 4px;
+}
+
+.tn3 {
+  padding-left: 5px;
 }
 
 .banner {
-  margin-top: 8px;
+  margin-top: 9px;
 }
 
 /*MAIN-NAVIGATION*/
@@ -133,6 +162,7 @@ i {
 	box-shadow: 2px 3px 5px rgba(0,0,0,.75);
 	border: solid 1px #0d1642;
 	background-image: linear-gradient(to top, #000, #576068);
+  margin-top: 3px;
 }
 
 .main-nav li {
@@ -140,18 +170,34 @@ i {
   list-style: none;
   }
 
-.main-nav li:first-child {
+.mn-li1 {
   margin-left: 125px;
 }
 
+.mn-li2 {
+  margin-left: -3px;
+}
+
+.mn-li3 {
+  margin-left: -8px;
+}
+
+.mn-li4 {
+  margin-left: -8px;
+}
+
+.mn-li5 {
+  margin-left: -12px;
+}
+
 .main-nav li a {
-  line-height: 32px;
+  line-height: 33px;
   color: #b1bcc0;
   text-decoration: none;
   font-family: 'Lucida Sans Unicode', sans-serif;
   font-size: 13.64px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 18px;
 }
 
 .main-nav a:hover {
@@ -163,21 +209,60 @@ i {
 	background-image: linear-gradient(to bottom, #206988, #114165 59%, #0c3256);
 }
 
-.products {
+
+/*BASKET*/
+.basket {
   display: inline-block;
+  text-align: center;
+  line-height: 37px;
+  margin-left: 53px;
+  vertical-align: middle;
+}
+
+.basket-info {
+  display: inline-block;
+  position: relative;
+}
+
+.products-count {
+  position: absolute;
+  top: -12.5px;
+  left: 3px;
+  color: #8a9296;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.products-count span {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  color: #0d5a8f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.products-price {
+  position: absolute;
+  top: -12px;
+  left: 74px;
   color: #8a9296;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
 }
 
-.products span {
+.products-price span {
+  position: absolute;
+  top: 0px;
+  left: 64px;
   color: #0d5a8f;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 
 .content-container {
-  margin-top: 158px;
+  margin-top: 165px;
 }
 
 /*Каталог продукции*/
@@ -292,6 +377,11 @@ i {
   line-height: 26px;
 }
 
+.catalog a:hover + .mark-circle {
+  width: 30px;
+  height: 30px;
+}
+
 /*Основной контент*/
 main {
   float: left;
@@ -302,12 +392,59 @@ main {
 	background-image: linear-gradient(to top, rgba(35,75,93,.49), rgba(201,207,209,.49));
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.product-info {
+ margin-top: 15px;
+ margin-left: 20px;
+}
+
+.product-vendor {
+  color: #206988;
+  font-family: 'Lucida Sans Unicode', sans-serif;
+  font-size: 14.59px;
+  text-align: center;
+}
+
+.product-name {
+  margin-top: 2px;
+  color: #1f2528;
+  font-family: 'Lucida Sans Unicode', sans-serif;
+  font-size: 12.77px;
+  text-align: center;
+}
+
+.product-pic {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+	width: 136px;
+	height: 127px;
+	border-radius: 7px;
+	background-color: #fff;
+	border: solid 1px #a4aeb1;
+}
+
+.product-price {
+  margin-top: 5px;
+  color: #114165;
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
 }
 
 /*Правый sidebar*/
 .filter {
   float: left;
-  width: 191px;
+  /*width: 191px;*/
+  margin-left: 11px;
+}
+
+.filter form {
+  margin-left: 15px;
 }
 
 .filter-title {
@@ -323,11 +460,11 @@ main {
 
 .filter-title p {
   position: absolute;
-  left: 28px;
+  left: 30px;
   font-family: 'Lucida Sans Unicode', sans-serif;
   font-size: 14px;
   color: #0c3256;
-  line-height: 25px;
+  line-height: 22px;
 }
 
 .filter-title p:before {
@@ -348,8 +485,8 @@ main {
 }
 
 .filter input[type="checkbox"] {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .filter input[type="submit"] {
@@ -362,6 +499,8 @@ main {
   color: #e5e9ea;
   font-family: Arial, Helvetica, sans-serif; 
   font-size: 11px;
+  margin-top: 20px;
+  margin-left: 13px;
 }
 
 .clearfix:after{
@@ -370,14 +509,25 @@ main {
   display: block;
 }
 
+.brand-logo {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 909px;
+}
+
+.brand-logo img{
+ padding-left: 4px;
+ padding-right: 4px;
+}
+
 /*FOOTER-NAVIGATION*/
 footer {
   background: #213a4d;
   position: relative;
   overflow: hidden;
-  height: 40px;
   height: 99px;
-  margin: 10px 0;
+  margin: 31px 0;
 }
 
 /*.footer-nav {
@@ -396,7 +546,6 @@ footer ul {
   position: relative;
   left: 50%;
   float: left;
-  height: 40px;
   top: 13px;
 }
 
@@ -404,8 +553,6 @@ footer li {
   position: relative;
   left: -50%;
   float: left;
-  /*margin: 0 10px;*/
-  /*height: 40px;*/
 }
 
 footer li a {
@@ -413,7 +560,6 @@ footer li a {
   display: block;
   text-decoration: none;
   padding: 0 12px;
-  /*line-height: 40px;*/
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   border-right: 1px solid #bec6c9;
@@ -427,11 +573,11 @@ footer a:hover {
   color: #52abcb;
 }
 
-footer p {
-  /*display: block;*/
+.site-created {
   position: relative;
   top: 30px;
   color: #7f4740;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
+  text-align: center;
 }
