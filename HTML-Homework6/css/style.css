@@ -220,11 +220,12 @@ i {
 }
 
 .basket-info {
-  display: inline-block;
   position: relative;
+  top: -15px;
+  left: 707px;
 }
 
-.products-count {
+.products-count-text {
   position: absolute;
   top: -12.5px;
   left: 3px;
@@ -234,28 +235,37 @@ i {
   letter-spacing: 0.5px;
 }
 
-.products-count span {
+.products-count {
   position: absolute;
-  top: 0px;
-  left: 50px;
+  top: -12.5px;
+  left: 52px;
   color: #0d5a8f;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 
-.products-price {
+.products-price-text {
   position: absolute;
-  top: -12px;
+  top: -12.5px;
   left: 74px;
   color: #8a9296;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
 }
 
-.products-price span {
+.products-price {
   position: absolute;
-  top: 0px;
-  left: 64px;
+  top: -12.5px;
+  left: 138px;
+  color: #0d5a8f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.currency {
+  position: absolute;
+  top: -12.5px;
+  left: 167px;
   color: #0d5a8f;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
