@@ -494,6 +494,12 @@ main {
   background-position: center;
 }
 
+.filter label {
+  font-family: 'Lucida Sans Unicode', sans-serif;
+  font-size: 12.73px;
+  color: #465961;
+}
+
 .filter input[type="checkbox"] {
   margin-top: 8px;
   margin-bottom: 8px;
@@ -540,15 +546,6 @@ footer {
   margin: 31px 0;
 }
 
-/*.footer-nav {
-  background: #213a4d;
-  position: relative;
-  overflow: hidden;
-  height: 40px;
-  height: 99px;
-  margin: 10px 0;
-}*/
-
 footer ul {
   list-style: none;
   margin: 0;
@@ -586,7 +583,7 @@ footer a:hover {
 .site-created {
   position: relative;
   top: 40px;
-  left: 155px;
+  left: -155px;
   color: #7f4740;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
