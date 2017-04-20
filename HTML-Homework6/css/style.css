@@ -163,6 +163,7 @@ i {
 	border: solid 1px #0d1642;
 	background-image: linear-gradient(to top, #000, #576068);
   margin-top: 3px;
+  overflow: hidden;
 }
 
 .main-nav li {
