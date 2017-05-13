@@ -1,30 +1,34 @@
 //* JS Homework #01 */
 function pow(){
-var Number = prompt("Введите число");
-var Power = prompt("Введите степень");
+var EnteredNumber = prompt("Введите число");
+var EnteredPower = prompt("Введите степень");
 var Result = 1;
 
-if ((isNaN(+Number)) || (isNaN(+Power)))
-{
+if ((Math.round(EnteredNumber) != EnteredNumber) || (Math.round(EnteredPower) != EnteredPower)) {
+    console.log("Введено не целое число");
+    return;
+}
+
+if ((isNaN(+EnteredNumber)) || (isNaN(+EnteredPower))){
     console.log("Результат моей функции Pow = " + "NaN");
-    console.log("Результат JS функции Pow = " + Math.pow(Number, Power));
+    console.log("Результат JS функции Pow = " + Math.pow(EnteredNumber, EnteredPower));
     return;
 } 
 
-if (Power > 0){
-  for (var i = 0; i < Power; i++) {
-  Result = Result * Number;
+if (EnteredPower > 0){
+  for (var i = 0; i < EnteredPower; i++) {
+  Result = Result * EnteredNumber;
   }
 } 
-else if (Power < 0){
-  for (var i = 0; i < Math.abs(Power); i++) {
-  Result = Result * Number;
+else if (EnteredPower < 0){
+  for (var i = 0; i < Math.abs(EnteredPower); i++) {
+  Result = Result * EnteredNumber;
   }
   Result = 1 / Result;
 }
 
 console.log("Результат моей функции Pow = " + Result);
-console.log("Результат JS функции Pow = " + Math.pow(Number, Power));
+console.log("Результат JS функции Pow = " + Math.pow(EnteredNumber, EnteredPower));
 } 
 
 pow();
