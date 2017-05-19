@@ -28,23 +28,8 @@ var test = {
 
         frag.appendChild(testTitle);
 
-  var attrArr1 = [
-    {
-      name: 'type',
-      value: 'checkbox'
-    },
-    {
-      name: 'id',
-      value: 'test1-answ1'
-    }
-  ];
-
-    var attrArr2 = [
-    {
-      name: 'for',
-      value: 'test1-answ1'
-    }
-  ];
+    // var attrArr1 = [{name: 'type', value: 'checkbox'}, {name: 'id', value: 'test1-answ1'}];
+    // var attrArr2 = [{name: 'for', value: 'test1-answ1'}];
 
 
 
@@ -53,8 +38,12 @@ var test = {
          var fragAnswers = document.createDocumentFragment();
          for (var j = 0, length = this.data.questions[i].answers.length; j < length; j++) {
              var answer = this.createNode('div', 'testBox1__answer', null, null);
-             var elCheckbox = this.createNode('input', null, attrArr1, null);
-             var elLabel = this.createNode('label', null, attrArr2, this.data.questions[i].answers[j]);
+             var connector = 'test' + [i+1] + '-answ' + [j+1];
+             console.log(connector);
+             var attrArrattrCheckbox = [{name: 'type', value: 'checkbox'}, {name: 'id', value: connector}];
+             var attrArrLabel = [{name: 'for', value: connector}];
+             var elCheckbox = this.createNode('input', null, attrArrattrCheckbox, null);
+             var elLabel = this.createNode('label', null, attrArrLabel, this.data.questions[i].answers[j]);
              answer.append(elCheckbox, elLabel)
              fragAnswers.appendChild(answer);
         }
