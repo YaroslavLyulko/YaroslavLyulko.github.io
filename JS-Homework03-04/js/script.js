@@ -20,6 +20,11 @@ var test = {
       }
     ]
   },
+  // createForm
+   createForm: function() {
+        var tagForm = this.createNode('form', null, null, null);
+        return tagForm;
+    },
   // $createAskBlock
     createAskBlock: function() {
         var frag = document.createDocumentFragment();
@@ -28,11 +33,6 @@ var test = {
 
         frag.appendChild(testTitle);
 
-    // var attrArr1 = [{name: 'type', value: 'checkbox'}, {name: 'id', value: 'test1-answ1'}];
-    // var attrArr2 = [{name: 'for', value: 'test1-answ1'}];
-
-
-
        for (var i = 0, length = this.data.questions.length; i < length; i++) {
          var question = this.createNode('div', 'testBox1__question', null, this.data.questions[i].title);
          var fragAnswers = document.createDocumentFragment();
@@ -40,9 +40,9 @@ var test = {
              var answer = this.createNode('div', 'testBox1__answer', null, null);
              var connector = 'test' + [i+1] + '-answ' + [j+1];
              console.log(connector);
-             var attrArrattrCheckbox = [{name: 'type', value: 'checkbox'}, {name: 'id', value: connector}];
+             var attrArrCheckbox = [{name: 'type', value: 'checkbox'}, {name: 'id', value: connector}];
              var attrArrLabel = [{name: 'for', value: connector}];
-             var elCheckbox = this.createNode('input', null, attrArrattrCheckbox, null);
+             var elCheckbox = this.createNode('input', null, attrArrCheckbox, null);
              var elLabel = this.createNode('label', null, attrArrLabel, this.data.questions[i].answers[j]);
              answer.append(elCheckbox, elLabel)
              fragAnswers.appendChild(answer);
@@ -56,6 +56,13 @@ var test = {
        container.appendChild(frag);
 
       return container;
+    },
+
+    // createConfirmBtn
+   createConfirmBtn: function() {
+        var attrArrConfirmBtn = [{name: 'type', value: 'submit'}, {name: 'value', value: 'Проверить мои результаты'}];
+        var tagConfirmBtn = this.createNode('input', null, attrArrConfirmBtn, null);
+        return tagConfirmBtn;
     },
 
   // $createNode
@@ -80,10 +87,24 @@ var test = {
     },
     // $init
     init: function() {
-      var container = document.querySelector('#root');
-        console.log(container);
-      container.appendChild(this.createAskBlock());
-      console.log(this.createAskBlock());
+
+        //div "root" creation and inserting into HTML tag "body"
+        var tagBody = document.querySelector('body');
+        var attrArrRoot = [{name: 'id', value: 'root'}];
+        var divRoot = this.createNode('div', null, attrArrRoot, null);
+        tagBody.insertBefore(divRoot, tagBody.childNodes[0]);
+
+        //inserting test content into div "root"
+        var container = document.querySelector('#root');
+        // container.appendChild(this.createAskBlock());
+        container.appendChild(this.createForm());
+
+        var container = document.querySelector('form');
+        container.appendChild(this.createAskBlock());
+
+        var container = document.querySelector('form');
+        container.appendChild(this.createConfirmBtn());
+
     }
 };
 
