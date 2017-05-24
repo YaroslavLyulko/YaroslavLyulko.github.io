@@ -3,7 +3,8 @@
   'use strict';
 
 var Clock = {
-  clockStarted: false,
+  isStarted: false,
+  isPaused: false,
   currDate: Date(),
   oldDate: Date(),
   accDate: 0,
@@ -11,9 +12,9 @@ var Clock = {
   start: function () {
     var self = this;
 
-    if (!this.clockStarted){
-      this.clockStarted = true;
-      this.oldDate = new Date(); //почему не работает, когда просто this.oldDate = Date();
+    if (!this.isStarted){
+      this.isStarted = true;
+      this.oldDate = new Date();
     }
 
     this.interval = setInterval(function () {
@@ -40,16 +41,44 @@ var Clock = {
   pause: function () {
     clearInterval(this.interval);
     delete this.interval;
-    this.clockStarted = false;
+    this.isStarted = false;
+    this.isPaused = true;
   },
 
   resume: function () {
     if (!this.interval) this.start();
+  },
+
+  clear: function () {
+    if (this.isStarted || this.isPaused) {
+      var tagBtnStart = document.getElementById('btnStart');
+      tagBtnStart.setAttribute('value', 'Start');
+      document.getElementById("currentTime").innerHTML = "00:00:00.000";
+      clearInterval(this.interval);
+      delete this.interval;
+      this.isStarted = false;
+      this.isPaused = false;
+      this.accDate = 0;
+    }
   }
 };
 
 function startClock(){
-  Clock.start();
+  if (!Clock.isStarted) {
+    Clock.start();
+    var tagBtnStart = document.getElementById('btnStart');
+    tagBtnStart.setAttribute('value', 'Pause');
+  } 
+  else if (Clock.isStarted) {
+    Clock.pause();
+    var tagBtnStart = document.getElementById('btnStart');
+    tagBtnStart.setAttribute('value', 'Resume');
+  }
+  else if (Clock.isPaused) {
+    Clock.resume();
+    var tagBtnStart = document.getElementById('btnStart');
+    tagBtnStart.setAttribute('value', 'Pause');
+  }
 }
 
 function pauseClock(){
@@ -60,11 +89,13 @@ function resumeClock(){
   Clock.resume();
 }
 
+function clearClock(){
+  Clock.clear();
+}
+
 var tagBtnStart = document.getElementById('btnStart');
 tagBtnStart.addEventListener('click', startClock);
-var tagBtnPause = document.getElementById('btnPause');
-tagBtnPause.addEventListener('click', pauseClock);
-var tagBtnResume = document.getElementById('btnResume');
-tagBtnResume.addEventListener('click', resumeClock);
+var tagBtnClear = document.getElementById('btnClear');
+tagBtnClear.addEventListener('click', clearClock);
 
 })();
