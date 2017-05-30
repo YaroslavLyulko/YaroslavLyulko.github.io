@@ -1,0 +1,34 @@
+.menu-container {
+  display: flex;
+  background-color: lightslategray;
+}
+
+.menu-container li {
+  list-style: none;
+  margin: 1rem;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  }
+
+.menu-container li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 3rem;
+  padding: 1rem;
+}
+
+.active {
+  background-color: lightseagreen;
+  border-left: 1px solid #838383;
+  border-right: 1px solid #838383;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
