@@ -30,6 +30,25 @@ $links.on('click', function() {
   console.log($idTabInfo);
   $($idTabInfo).addClass('visible').removeClass('hidden');
   $($idTabInfo).siblings().addClass('hidden').removeClass('visible');
-})
+});
+
+// $(".someField").tooltip({
+//       position: {
+//         my: "left top",
+//         at: "right+5 top-5",
+//         collision: "none"
+//       }
+//     });
+
+var $inputs = $('.someField');
+$inputs.on('click', function() {
+  $(".sh").removeClass('sh-w');
+  $(this).siblings(".sh").toggleClass( "sh-w" );
+});
+
+var $btn = $('.btnShowHelp');
+$btn.on('click', function() {
+  $(".sh").toggleClass('sh-w');
+});
 
 });

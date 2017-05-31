@@ -32,3 +32,46 @@
 .hidden {
   display: none;
 }
+
+/*hw js #08*/
+.js-hw8 {
+  margin-top: 10rem;
+}
+.authorization-form {
+  width: 50rem;
+  background-color: lightslategray;
+  margin: 0 auto;
+  padding: 2rem;  
+}
+
+label {
+  width: 5rem;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.inputField {
+  margin-bottom: 1rem;
+}
+
+.btnShowHelp {
+  width: 7rem;
+}
+
+.inputField {
+  position: relative;
+}
+
+.sh {
+  position: absolute;
+  top: 0rem;
+  left: 18rem;
+  background-color: lightseagreen;
+  padding: 1rem;
+  display: none;
+}
+
+.sh-w {
+  display: block;
+}

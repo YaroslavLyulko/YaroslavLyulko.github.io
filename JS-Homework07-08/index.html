@@ -9,12 +9,14 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
 
-<div >
+<div class="js-hw7">
   <ul class="menu-container">
     <li id="tab1" class="tab active"><a href="#">Nunc tincidunt</a></li>
     <li id="tab2" class="tab"><a href="#">Proin dolor</a></li>
@@ -32,6 +34,30 @@
     <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
     <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
   </div>
+</div>
+
+<div class="js-hw8">
+  <form action="" class="authorization-form">
+  <fieldset>
+    <div class="inputField">
+      <label for="FirstName">Firstname</label>
+      <input id="FirstName" class="someField" name="FirstName" title="Please provide your firstname.">
+      <div id="tooltip1" class="sh">Please provide your firstname.</div>
+    </div>
+    <div class="inputField">
+      <label for="LastName">Lastname</label>
+      <input id="LastName" class="someField" name="LastName" title="Please provide also your lastname.">
+      <div id="tooltip2" class="sh">Please provide also your lastname.</div>
+    </div>
+    <div class="inputField">
+      <label for="Address">Address</label>
+      <input id="Address" class="someField" name="Address" title="Your home or work address.">
+      <div id="tooltip3" class="sh">Your home or work address.</div>
+    </div>
+    <button class="btnShowHelp">Show help</button>
+  </fieldset>
+</form>
+
 </div>
 
   <script src="js/script.js"></script>
