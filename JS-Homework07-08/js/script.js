@@ -43,12 +43,13 @@ $links.on('click', function() {
 var $inputs = $('.someField');
 $inputs.on('click', function() {
   $(".sh").removeClass('sh-w');
-  $(this).siblings(".sh").toggleClass( "sh-w" );
+  $(this).siblings(".sh").toggleClass("sh-w");
 });
 
 var $btn = $('.btnShowHelp');
 $btn.on('click', function() {
-  $(".sh").toggleClass('sh-w');
+  $(".sh").removeClass('sh-w');
+  $(".sh").toggleClass("sh-w");
 });
 
 });
