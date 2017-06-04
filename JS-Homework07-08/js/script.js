@@ -48,8 +48,22 @@ $inputs.on('click', function() {
 
 var $btn = $('.btnShowHelp');
 $btn.on('click', function() {
-  $(".sh").removeClass('sh-w');
-  $(".sh").toggleClass("sh-w");
+  // $(".sh").removeClass('sh-w');
+  // $(".sh").toggleClass("sh-w");
+
+  if (!$("#tooltip1").hasClass("sh-w")
+ & !$("#tooltip2").hasClass("sh-w")
+ & !$("#tooltip3").hasClass("sh-w")) {
+   $(".sh").addClass("sh-w");
+ } else if ($("#tooltip1").hasClass("sh-w")
+ & $("#tooltip2").hasClass("sh-w")
+ & $("#tooltip3").hasClass("sh-w")) {
+   $(".sh").removeClass("sh-w");
+ } else {
+   $(".sh").removeClass('sh-w');
+   $(".sh").toggleClass("sh-w");
+ }
+
 });
 
 });
