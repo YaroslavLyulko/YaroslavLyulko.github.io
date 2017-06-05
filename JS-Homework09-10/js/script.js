@@ -29,4 +29,9 @@ $('.n-input').each(function(){
     });
   });
 
+var $btn = $('.btnCheckAll');
+$btn.on('click', function() {
+$('.n-input').iCheck('check');
+});
+
 	});
