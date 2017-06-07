@@ -34,4 +34,31 @@ $btn.on('click', function() {
 $('.n-input').iCheck('check');
 });
 
+$(".submenu > li > a").hover(
+function() {
+	$(".subsubmenu li a").animate({
+	backgroundColor:"#2489c5",
+  }, 1000);
+},
+function() {
+	$(".subsubmenu li a").queue("fx", []);
+	$(".subsubmenu li a").animate({
+	backgroundColor:"red",
+  }, 10);
+});
+
+//test area
+jQuery(".test1").hover(
+  function () {
+	  console.log("есть div .test1");
+    jQuery(this).animate({
+        backgroundColor:"#03C",
+    }, 500 );
+}, 
+	function() {
+    jQuery(this).animate({
+        backgroundColor:"#0CF",
+    }, 500 );
+});
+
 	});

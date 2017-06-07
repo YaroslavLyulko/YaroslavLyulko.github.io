@@ -10,3 +10,95 @@
 .cb-container {
     margin: 0.5rem;
 }
+
+.menu-example {
+    margin: 5rem;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: black;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    /*background-color: white;
+    border: 1px solid red;*/
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+ul.subsubmenu {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 0;
+    left: 100%;
+    /*background-color: white;
+    border: 1px solid red;*/
+    border-left: 10px solid transparent;
+}
+
+ul.subsubmenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    /*transition: 2s background-color;*/
+}
+
+ul.subsubmenu > li > a:hover {
+    text-decoration: underline;
+    /*background-color: blueviolet;    */
+}
+
+ul.submenu > li:hover > ul.subsubmenu {
+    display: block;
+}
+
+.test1 {
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+}
