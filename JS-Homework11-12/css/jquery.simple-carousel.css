@@ -1,5 +1,6 @@
 .simple-carousel {
     margin: 2rem;
+    overflow: hidden;
 }
 .carousel-hider {
     width: 600px;

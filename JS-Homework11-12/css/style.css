@@ -1,0 +1,105 @@
+.user-list {
+    margin: 5rem;
+}
+
+.user-list h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.list-item {
+    margin-top: 4rem;
+    clear: both;
+}
+
+.user-photo {
+    float: left;
+    width: 10rem;
+}
+
+.user-photo img {
+    width: 7rem;
+    border-radius: 3.5rem;
+}
+
+.user-info {
+    width: 30rem;
+    float: left;
+}
+
+.user-info__name {
+    margin-top: 1.5rem;
+    font-family: 'Helvetica Neue', Tahoma, sans-serif;
+    font-weight: bold;
+    color: darkgrey;
+    font-size: 1.5rem;
+}
+
+.user-info__surname {
+    margin-top: 1rem;
+    font-family: 'Helvetica Neue', Tahoma, sans-serif;
+    color: gray;
+    font-size: 1rem;
+}
+
+.userContacts {
+    padding-top: 1rem;
+    height: 5rem;
+    width: 36rem;
+    clear: both;
+}
+
+.userContacts__address {
+    float: left;
+    /*height: 4rem;*/
+    width: 33%;
+    background-color: #fe7676;
+    vertical-align: middle; 
+}
+
+.userContacts__address img {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 32px;
+}
+
+.userContacts__address p {
+    color: white;
+    margin: 0.4rem;
+}
+
+.userContacts__phoneNumber {
+    float: left;
+    /*height: 4rem;*/
+    width: 33%;
+    background-color: #adc646;
+}
+
+.userContacts__phoneNumber img {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 32px;
+}
+
+.userContacts__phoneNumber p {
+    color: white;
+    margin: 0.4rem;
+}
+
+.userContacts__mail {
+    float: left;
+    /*height: 4rem;*/
+    width: 33%;
+    background-color: #7ea4b7;
+}
+
+.userContacts__mail img {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 32px;
+}
+
+.userContacts__mail p {
+    color: white;
+    margin: 0.4rem;
+}
