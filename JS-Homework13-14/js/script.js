@@ -58,10 +58,10 @@ var checkboxes = document.querySelectorAll('input[type="checkbox"]'),
 
 var result;
 
-_.forEach(parsedTestData.questions, function(itemQuestions) {
-  _.forEach(itemQuestions.answers, function(itemAnswers, indexAnswers) {
+_.forEach(parsedTestData.questions, itemQuestions => {
+  _.forEach(itemQuestions.answers, (itemAnswers, indexAnswers) => {
     result = false;
-    _.forEach(itemQuestions.correctAnswers, function(itemCorrectAnswers) {
+    _.forEach(itemQuestions.correctAnswers, itemCorrectAnswers => {
       if ((indexAnswers + 1) == itemCorrectAnswers) {
         result = true;
       } 
