@@ -1,0 +1,16 @@
+.testBox {
+    margin: 2rem;
+}
+
+.testBox1__title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.testBox1__question {
+    margin-top: 1rem;
+}
+
+#btnCheckResult {
+    margin-top: 1rem;
+}
