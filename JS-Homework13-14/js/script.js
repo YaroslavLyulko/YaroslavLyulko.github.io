@@ -41,19 +41,19 @@ var checkboxes = document.querySelectorAll('input[type="checkbox"]'),
   resultMessage = document.getElementById('resultText');
 
 for (var i = 0, length1 =  parsedTestData.questions.length; i < length1; i++) {
-  var length2 = parsedTestData.questions[i].answers.length;
-  var length3 = parsedTestData.questions[i].correctAnswers.length;
-  for (var j = 0; j < length2; j++) {
+  // var length2 = parsedTestData.questions[i].answers.length;
+  // var length3 = parsedTestData.questions[i].correctAnswers.length;
+  for (var j = 0; j < parsedTestData.questions[i].answers.length; j++) {
     var result = false;
-    for (var k = 0; k < length3; k++) {
+    for (var k = 0; k < parsedTestData.questions[i].correctAnswers.length; k++) {
       if ((j + 1) == parsedTestData.questions[i].correctAnswers[k]) {
         result = true;
       } 
     }
     if (result == true) {
-        arrCorrectAnswers.push('true');
+        arrCorrectAnswers.push(true);
       } else {
-        arrCorrectAnswers.push('false');
+        arrCorrectAnswers.push(false);
       }
   }
 }
