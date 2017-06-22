@@ -40,23 +40,39 @@ var checkboxes = document.querySelectorAll('input[type="checkbox"]'),
   arrAnswers,
   resultMessage = document.getElementById('resultText');
 
-for (var i = 0, length1 =  parsedTestData.questions.length; i < length1; i++) {
-  // var length2 = parsedTestData.questions[i].answers.length;
-  // var length3 = parsedTestData.questions[i].correctAnswers.length;
-  for (var j = 0; j < parsedTestData.questions[i].answers.length; j++) {
-    var result = false;
-    for (var k = 0; k < parsedTestData.questions[i].correctAnswers.length; k++) {
-      if ((j + 1) == parsedTestData.questions[i].correctAnswers[k]) {
+// for (var i = 0, length1 =  parsedTestData.questions.length; i < length1; i++) {
+//   for (var j = 0; j < parsedTestData.questions[i].answers.length; j++) {
+//     var result = false;
+//     for (var k = 0; k < parsedTestData.questions[i].correctAnswers.length; k++) {
+//       if ((j + 1) == parsedTestData.questions[i].correctAnswers[k]) {
+//         result = true;
+//       } 
+//     }
+//     if (result == true) {
+//         arrCorrectAnswers.push(true);
+//       } else {
+//         arrCorrectAnswers.push(false);
+//       }
+//   }
+// }
+
+var result;
+
+_.forEach(parsedTestData.questions, function(itemQuestions) {
+  _.forEach(itemQuestions.answers, function(itemAnswers, indexAnswers) {
+    result = false;
+    _.forEach(itemQuestions.correctAnswers, function(itemCorrectAnswers) {
+      if ((indexAnswers + 1) == itemCorrectAnswers) {
         result = true;
       } 
-    }
+    });
     if (result == true) {
         arrCorrectAnswers.push(true);
       } else {
         arrCorrectAnswers.push(false);
       }
-  }
-}
+  });
+});
 
 // arrCorrectAnswers = [true,false,false,true,true,true,true,true,false,true,false];
 
