@@ -1,0 +1,64 @@
+.hwClasses {
+    margin: 2rem;
+}
+
+.hwClasses__inputQuestion {
+    margin-top: 1rem;
+    width: 35rem;
+}
+
+.hwClasses__inputAnswer {
+    margin-top: 1rem;
+    width: 35rem;
+}
+
+.hwClasses__correctAnswers {
+    margin-top: 1rem;
+}
+
+.hwClasses__correctAnswers label {
+    margin-right: 1rem;
+}
+
+
+.hwClasses__btnSaveQuestion {
+   margin-top: 0.5rem; 
+}
+
+/*testBox*/
+.testBox {
+    margin: 2rem;
+    border-top: 1px solid grey;
+}
+
+.testBox1__title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.testBox1__question {
+    margin-top: 1rem;
+}
+
+#btnCheckResult {
+    margin-top: 1rem;
+}
+
+/*Next homework - API*/
+.searchBox {
+    margin: 3rem;
+}
+
+.searchBox__searchInput {
+    width: 20rem;
+    margin: 1rem;
+}
+.searchBox__items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.searchBox__Item {
+    margin: 1rem;
+
+}
