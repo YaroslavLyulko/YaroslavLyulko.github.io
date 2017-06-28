@@ -1,26 +1,45 @@
 $(document).ready(function() {
 'use strict';
 
+function getAnswers(arr) {
+	return _.map(arr, function(item) {
+		return item.value;
+	});
+}
+
+function getCorrectAnswers(arr) {
+	return _.map(arr, function(item) {
+		return item.checked;
+	});
+}
+
+function getUserAnswers(arr) {
+	return _.map(arr, function(item) {
+		return item.checked;
+	});
+}
+
 var data = {
    testTitle: 'Тест по какой-то теме',
    questions: [
      {
-       title: 'Вопрос #1 - Арбуз это ...',
+       question: 'Вопрос #1 - Арбуз это ...',
        answers: ['ягода', 'фрукт', 'овощ'],
        correctAnswers: [1]
      },
      {
-       title: 'Вопрос #2 - Тональный крем нужно наносить ...',
+       question: 'Вопрос #2 - Тональный крем нужно наносить ...',
        answers: ['кончиками пальцев', 'кисточкой', 'бьютиблендером', 'спонжиком'],
        correctAnswers: [1, 2, 3, 4]
      },
      {
-       title: 'Вопрос #3 - База под тональный крем подбирается в зависимости от ...',
+       question: 'Вопрос #3 - База под тональный крем подбирается в зависимости от ...',
        answers: ['типа кожи', 'цвета кожи', 'времени года', 'запаха'],
        correctAnswers: [1, 3]
      }
    ]
  };
+
 
 //class test definition
 function Test(question, answers, correctAnswers) {
@@ -29,16 +48,32 @@ function Test(question, answers, correctAnswers) {
   this.correctAnswers = correctAnswers;
 }
 
-var TestRadio = new Test();
-var TestCheckbox = new Test();
-
 document.getElementsByClassName('hwClasses__btnSaveQuestion')[0].addEventListener("click", function(){
-  console.log("Save Q");
-  var markedCorrectAnswers = document.querySelectorAll('.hwClasses input[type="checkbox"]');
-  console.log('markedCorrectAnswers', markedCorrectAnswers);
-  var arrMarkedCorrectAnswers = getAnswers(markedCorrectAnswers);
-  console.log('arrMarkedCorrectAnswers', arrMarkedCorrectAnswers);
+  
+  var arrCorrectAnswers = getCorrectAnswers(document.querySelectorAll('.hwClasses input[type="checkbox"]'));
+  console.log('arrCorrectAnswers', arrCorrectAnswers);
+  
+  var positiveArr = arrCorrectAnswers.filter(function(value) {
+    return value === true;
+  });
+
+  if (positiveArr.length == 0){
+    alert("Не указан правильный вариант(ы) ответа!");
+  } else if (positiveArr.length == 1){
+    var TestRadio = new Test();
+    TestRadio.question = document.getElementsByClassName('hwClasses__inputQuestion')[0].value;
+    TestRadio.answers = getAnswers(document.getElementsByClassName('hwClasses__inputAnswer'));
+    TestRadio.correctAnswers = getCorrectAnswers(document.querySelectorAll('.hwClasses input[type="checkbox"]'));
+    console.log('TestRadio', TestRadio);
+    data.questions.push(TestRadio);
+  } else if (positiveArr.length > 1) {
+    var TestCheckbox = new Test();
+  }
+
+console.log('data = ', data);
+
 });
+
 
 
 localStorage.setItem('Test', JSON.stringify(data));
@@ -79,7 +114,7 @@ _.forEach(parsedTestData.questions, itemQuestions => {
 
 document.getElementById("btnCheckResult").addEventListener("click", function() {
     
-    arrAnswers = getAnswers(checkboxes);
+    arrAnswers = getUserAnswers(checkboxes);
     console.log('cAnswers - ' + arrCorrectAnswers + ' ' + arrCorrectAnswers.length + ' ' + typeof(arrCorrectAnswers));
 		console.log('uAnswers - ' + arrAnswers + ' ' + arrAnswers.length + ' ' + typeof(arrAnswers));
     
@@ -98,13 +133,6 @@ document.getElementById("btnCheckResult").addEventListener("click", function() {
     });
 
 });
-
-function getAnswers(arr) {
-	return _.map(arr, function(item) {
-		return item.checked;
-	});
-}
-
 
 //Next homework - API
 var parent2 = document.getElementById('container2');
