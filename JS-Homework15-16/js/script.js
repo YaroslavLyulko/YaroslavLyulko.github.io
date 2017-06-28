@@ -19,6 +19,7 @@ function getUserAnswers(arr) {
 	});
 }
 
+//Test Data Initialization
 var data = {
    testTitle: 'Тест по какой-то теме',
    questions: [
@@ -40,6 +41,14 @@ var data = {
    ]
  };
 
+localStorage.setItem('Test', JSON.stringify(data));
+
+var parent = document.getElementById('container');
+var sourse = document.getElementById('tmpl').textContent;
+var template = _.template(sourse);
+
+var parsedTestData = JSON.parse(localStorage.getItem('Test'));
+parent.innerHTML = template(parsedTestData);
 
 //class test definition
 function Test(question, answers, correctAnswers) {
@@ -48,14 +57,23 @@ function Test(question, answers, correctAnswers) {
   this.correctAnswers = correctAnswers;
 }
 
+// Save Question - click action
 document.getElementsByClassName('hwClasses__btnSaveQuestion')[0].addEventListener("click", function(){
   
-  var arrCorrectAnswers = getCorrectAnswers(document.querySelectorAll('.hwClasses input[type="checkbox"]'));
-  console.log('arrCorrectAnswers', arrCorrectAnswers);
-  
-  var positiveArr = arrCorrectAnswers.filter(function(value) {
-    return value === true;
+  var arrCorrectAnswersCB = getCorrectAnswers(document.querySelectorAll('.hwClasses input[type="checkbox"]'));
+  var arrCorrectAnswers = [];
+
+  var positiveArr = arrCorrectAnswersCB.filter(function(item) {
+      return item === true;
   });
+
+  arrCorrectAnswersCB.forEach(function(item, i) {
+    if (item === true){
+      arrCorrectAnswers.push(i + 1);
+    }
+  });
+
+console.log('positiveArr', positiveArr);
 
   if (positiveArr.length == 0){
     alert("Не указан правильный вариант(ы) ответа!");
@@ -63,57 +81,81 @@ document.getElementsByClassName('hwClasses__btnSaveQuestion')[0].addEventListene
     var TestRadio = new Test();
     TestRadio.question = document.getElementsByClassName('hwClasses__inputQuestion')[0].value;
     TestRadio.answers = getAnswers(document.getElementsByClassName('hwClasses__inputAnswer'));
-    TestRadio.correctAnswers = getCorrectAnswers(document.querySelectorAll('.hwClasses input[type="checkbox"]'));
+    TestRadio.correctAnswers = arrCorrectAnswers;
     console.log('TestRadio', TestRadio);
     data.questions.push(TestRadio);
+    localStorage.setItem('Test', JSON.stringify(data));
+
+    var parsedTestData = JSON.parse(localStorage.getItem('Test'));
+    var parent = document.getElementById('container');
+    var sourse = document.getElementById('tmpl').textContent;
+    var template = _.template(sourse);
+
+    var parsedTestData = JSON.parse(localStorage.getItem('Test'));
+    parent.innerHTML = template(parsedTestData);
+
+    // updateTest();
+    updateArrCorrectAnswers();
   } else if (positiveArr.length > 1) {
     var TestCheckbox = new Test();
+    TestCheckbox.question = document.getElementsByClassName('hwClasses__inputQuestion')[0].value;
+    TestCheckbox.answers = getAnswers(document.getElementsByClassName('hwClasses__inputAnswer'));
+    TestCheckbox.correctAnswers = arrCorrectAnswers;
+    console.log('TestCheckbox', TestCheckbox);
+    data.questions.push(TestCheckbox);
+    localStorage.setItem('Test', JSON.stringify(data));
+
+    var parsedTestData = JSON.parse(localStorage.getItem('Test'));
+    var parent = document.getElementById('container');
+    var sourse = document.getElementById('tmpl').textContent;
+    var template = _.template(sourse);
+
+    var parsedTestData = JSON.parse(localStorage.getItem('Test'));
+    parent.innerHTML = template(parsedTestData);
+    // updateTest();
+    updateArrCorrectAnswers();
   }
 
 console.log('data = ', data);
 
 });
 
-
-
-localStorage.setItem('Test', JSON.stringify(data));
-var testData = localStorage.getItem('Test');
-var parsedTestData = JSON.parse(testData);
-
-var parent = document.getElementById('container');
-var sourse = document.getElementById('tmpl').textContent;
-var template = _.template(sourse);
-
-parent.innerHTML += template(parsedTestData);
-
 //Result check
-var checkboxes = document.querySelectorAll('.testBox input[type="checkbox"]'),
-  arrCorrectAnswers = [],
-  arrAnswers,
+var arrCorrectAnswers = [];
+  
+function updateArrCorrectAnswers(){  
+  
+  arrCorrectAnswers = [];
+  
+  var result;
+  var parsedTestData = JSON.parse(localStorage.getItem('Test'));
+
+  _.forEach(parsedTestData.questions, itemQuestions => {
+    _.forEach(itemQuestions.answers, (itemAnswers, indexAnswers) => {
+      result = false;
+      _.forEach(itemQuestions.correctAnswers, itemCorrectAnswers => {
+        if ((indexAnswers + 1) == itemCorrectAnswers) {
+          result = true;
+        } 
+      });
+      if (result == true) {
+          arrCorrectAnswers.push(true);
+        } else {
+          arrCorrectAnswers.push(false);
+       }
+    });
+  });
+}
+
+updateArrCorrectAnswers();
+
+
+var  arrAnswers,
   resultMessage = document.getElementById('resultText');
 
-
-
-var result;
-
-_.forEach(parsedTestData.questions, itemQuestions => {
-  _.forEach(itemQuestions.answers, (itemAnswers, indexAnswers) => {
-    result = false;
-    _.forEach(itemQuestions.correctAnswers, itemCorrectAnswers => {
-      if ((indexAnswers + 1) == itemCorrectAnswers) {
-        result = true;
-      } 
-    });
-    if (result == true) {
-        arrCorrectAnswers.push(true);
-      } else {
-        arrCorrectAnswers.push(false);
-      }
-  });
-});
-
 document.getElementById("btnCheckResult").addEventListener("click", function() {
-    
+  var checkboxes = document.querySelectorAll('.testBox input[type="checkbox"]');
+    console.log('checkboxes ' + checkboxes);
     arrAnswers = getUserAnswers(checkboxes);
     console.log('cAnswers - ' + arrCorrectAnswers + ' ' + arrCorrectAnswers.length + ' ' + typeof(arrCorrectAnswers));
 		console.log('uAnswers - ' + arrAnswers + ' ' + arrAnswers.length + ' ' + typeof(arrAnswers));
