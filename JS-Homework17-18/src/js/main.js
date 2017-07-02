@@ -2,4 +2,4 @@
 //     var moduleName2 = 'main.js';
 // })();
 
-var b = 2;
+var b = 2222;

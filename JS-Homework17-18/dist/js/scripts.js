@@ -1,1 +1,1 @@
-function foo(){console.log("aaaa")}var c=33,a=1111;foo();var b=2;
+function foo(){console.log("aaaa")}var c=33,a=1111;foo();var b=2222;
