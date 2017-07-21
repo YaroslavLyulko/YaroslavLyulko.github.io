@@ -1,0 +1,44 @@
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts {
+    list-style-type: none;
+
+    &__item {
+    display: inline;
+    }
+}
+
+.location, 
+.phone,
+.mail {
+    display: inline;
+}
+
+.location__text, 
+.phone__text,
+.mail__text,
+.legal__text {
+    display: inline-block;
+    line-height: 60px;
+    color: #828385;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.location__text {
+    margin-left: 11px;
+    margin-right: 34px;
+}
+
+.phone__text {
+    margin-left: 9px;
+    margin-right: 42px;
+}
+
+.mail__text {
+    margin-left: 14px;
+}

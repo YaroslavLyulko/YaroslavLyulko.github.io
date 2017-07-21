@@ -1,0 +1,117 @@
+.services {
+    padding-top: 48px;
+    padding-bottom: 66px; 
+
+    &__header {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 40px;
+        list-style-type: none;
+        margin-top: 50px;
+    }
+
+    &__item {
+        display: inline;
+    }
+}
+
+.service-card {
+    position: relative;
+    
+    &__title {
+        display: block;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+        text-decoration: none;
+        margin-top: 34px;
+    }
+
+    &__topper:hover {
+        visibility: visible;
+    }
+    &__img-link:hover ~ &__topper {
+        visibility: visible;
+    }
+    &__plus-symbol:hover &__plus-symbol::before {
+        visibility: visible;
+    }
+
+    &__plus-symbol:hover {
+        visibility: visible;
+    }
+    &__topper:hover ~ &__plus-symbol {
+        visibility: visible;
+    }
+
+    &__title:hover {
+        color: #f4b60d;
+    }
+    &__topper:hover ~ &__title {
+        color: #f4b60d;
+    }
+    &__plus-symbol:hover ~ &__title {
+        color: #f4b60d;
+    }
+}
+
+.service-card__topper {
+    width: 260px;
+    height: 260px;
+    visibility: hidden;
+    background-color: #248cec;
+    position: absolute;
+    top: 0px;
+    opacity: 0.8;
+}
+
+.service-card__plus-symbol{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+    top: 115px;
+    left: 115px;
+
+    &:before,
+    &:after{
+        content: "";
+        position: absolute;
+        background-color: white;
+        transition: transform 0.25s ease-out;
+    }
+
+    /* Vertical line */
+    &:before{
+        top: 0;
+        left: 50%;
+        width: 4px;
+        height: 100%;
+        margin-left: -2px;
+    }
+
+    /* horizontal line */
+    &:after{
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        margin-top: -2px;
+    }
+    
+    &:hover{
+        cursor: pointer;
+        
+        &:before{ transform: rotate(90deg); }
+        &:after{ transform: rotate(180deg); }
+    }
+}

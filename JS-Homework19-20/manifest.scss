@@ -1,0 +1,341 @@
+//page-header
+.wrapper .wrapper--white
+.page-header .container
+    .top-bar
+        .logo
+            .logo__icon
+            .logo__title
+            .logo__subtitle
+        .social    
+            .social__item*5
+                .social__link
+                .social__icon
+    .nav-bar
+        .menu
+            .menu__item*5
+                menu__link
+        .search
+            .seatch__input
+            .search__icon
+    .carousel
+
+//features
+.wrapper .wrapper--white
+.features .container
+    .features__item*3
+        .article
+            .article__number
+            .article__icon
+            .article__title
+            .article__text
+            .article__link
+
+//services
+.wrapper .wrapper--dark-gray
+.services .container
+    .services__header
+    .services__body
+        .services__item*4
+            .service-card
+                .service-card__img
+                .service-card__title
+
+//main
+.wrapper .wrapper--light-gray
+.main .container
+    .news
+        .news__header
+        .news__body
+            .news__item*2
+                .news-block
+                    .news-block__img
+                    .news-block__title
+                    .news-block__author       
+                    .news-block__link-comments
+                    .news-block__text
+                    .news-block__date
+                        .news-date
+                            .news-date__month
+                            .news-date__day
+    .banners-place    
+        .banners-place__header
+        .banners-place__body
+            .banners-place__item*4
+                .accordion-panel
+                    .accordion-panel__title
+                    .accordion-panel__text
+
+//partner-logos
+.wrapper .wrapper--white
+.partner-logos .container
+    .partner-logos__item*6
+        .partner-logo
+            .partner-logo__link
+                .partner-logo__icon
+
+//footer-nav
+.wrapper .wrapper--dark-gray
+.footer-nav .container
+    .footer-nav__item*4
+        .nav-block
+            .nav-block__header
+            .nav-block__body
+                .nav-block__item*4
+                    .nav-link-list
+                        .nav-link-list__link
+
+//page-footer
+.wrapper .wrapper--gray
+.page-footer .container
+    .contacts
+        .contacts__location
+            .location
+                .location__icon
+                .location__text
+        .contacts__phone
+            .phone
+                .phone__icon
+                .phone__text
+        .contacts__mail
+            .mail
+                .mail__icon
+                .mail__text
+    .legal
+        .legal__text
+
+//Sprint creation
+.b-sprint
+    .b-sprint__header
+        .b-sprint__label
+            .b-sprint__label-text
+            .b-sprint__story-counter
+    .b-sprint__main
+        .b-sprint__main-item
+            .b-sprint-event
+                .b-sprint-event__item
+                    .b-sprint-event__name
+                    .b-sprint-event__calendar
+        .b-sprint__main-item
+            .b-sprint-list
+                .b-sprint-list__item
+                    .b-sprint-list__number
+                    .b-sprint-list__text
+                    .b-sprint-list__btn-del
+        .b-sprint__main-item
+            .b-sprint__controls
+                .b-sprint__btn-start
+                .b-sprint__btn-cancel
+
+//Classes for selection of cards into sprint
+.b-story-card--selected
+.b-story-card--done
+
+//Current sprint displaying
+.b-sprint
+    .b-sprint__header
+        .b-sprint__label
+            .b-sprint__label-text
+            .b-sprint__progress
+            .b-sprint__date
+            .b-sprint__btn--collapse
+    .b-sprint__content
+        .b-sprint__content-item
+            .b-stories
+                .b-stories__item
+                    .b-story-card
+                        .b-story-card__text
+                        .b-story-card__list
+                            .b-story-card__list-item
+                        .b-story-card__footer
+                            .b-story-card__info
+                                .b-story-card__info-label
+                                .b-story-card__info-item
+                                    .b-story-card__total
+                                    .b-story-card__done
+                            .b-story-card__btn
+        .b-sprint__content-item
+            .b-sprint__btn-edit
+
+// For stories section
+.b-backlog__content
+    .b-backlog__content-item
+        .b-stories
+            .b-stories__item
+                .b-story-card
+                    .b-story-card__text
+                    .b-story-card__list
+                        .b-story-card__list-item
+                    .b-story-card__footer
+                        .b-story-card__info
+                            .b-story-card__info-label
+                            .b-story-card__info-item
+                                .b-story-card__total
+                                .b-story-card__done
+                        .b-story-card__btn
+                .b-stories__btn-add
+
+    .b-backlog__content-item
+        .b-sprint-create
+            .b-sprint__btn
+            .b-sprint__info
+            .b-sprint__label
+
+//Story modal
+.b-story-modal__overlay
+    .b-story-modal
+        .b-story-modal__header
+            .b-story-modal__name
+            .b-story-modal__color
+            .b-story-modal__story-points
+            .b-story-modal__btn-close
+        .b-story-modal__content
+            .b-story-modal__content-item
+                .b-story-modal__item-header
+                    .b-story-modal__label
+                    .b-story-modal__counter
+                        .b-story-modal__total
+                        .b-story-modal__done
+                .b-tasks-list
+                    .b-tasks-list__item
+                        .b-tasks-list__counter
+                        .b-tasks-list__text
+                        .b-tasks-list__btn-del
+                        .b-tasks-list__color
+                .b-story-modal__btn-add
+                .b-story-modal__tasks-input
+                    .b-story-modal__tasks-color
+
+            .b-story-modal__content-item
+                .b-story-modal__item-header
+                    .b-story-modal__label
+                    .b-story-modal__counter
+                        .b-story-modal__total
+                        .b-story-modal__done
+                .b-acc-criteria
+                    .b-acc-criteria__item
+                        .b-acc-criteria__number
+                        .b-acc-criteria__text
+                        .b-acc-criteria__btn-del
+                        .b-acc-criteria__checkbox
+                .b-story-modal__btn-add
+                .b-story-modal__acc-criteria--input
+
+        .b-story-modal__footer
+            .b-story-modal__btn-del
+            .b-story-modal__btn-cancel
+            .b-story-modal__btn-save
+
+//Custom Modal window
+.b-modal__overlay
+    .b-modal
+        .b-modal__btn-close
+        .b-modal__text
+        .b-modal__buttons
+            .b-modal__btn-red
+            .b-modal__btn-green
+
+//------------------------------------Board
+.b-board
+        .b-board__item
+            .b-board__сolumns
+                .b-board__сolumns-item
+                    .b-board__header
+                    .b-stories__item
+                        .b-story-card
+                            .b-story-card__text
+                            .b-story-card__list
+                                .b-story-card__list-item
+                            .b-story-card__footer
+                                .b-story-card__info
+                                    .b-story-card__info-label
+                                    .b-story-card__info-item
+                                        .b-story-card__total
+                                        .b-story-card__done
+                                .b-story-card__btn
+                .b-board__сolumns-item
+                    .b-board__header
+                    .b-tasks
+                        .b-tasks__item
+                            .b-task-card
+                                .b-task-card__text
+                                .b-task-card__footer
+                                    .b-task-card__ava
+                                    .b-task-card__info
+                                        .b-task-card__points
+                                        .b-task-card__deadline
+                            .b-tasks__btn-add
+
+                .b-board__сolumns-item
+                    .b-board__header
+                    .b-tasks
+
+                .b-board__сolumns-item
+                    .b-board__header
+                    .b-tasks
+
+                .board__сolumns-item
+                    .b-board__header
+                    .b-tasks
+
+        .b-board__item
+            .b-partners
+                .b-partners__header
+                .b-partners__list
+                    .b-partners__list-item
+                        .b-partners__link
+                            .b-partners__ava
+                            .b-partners__name
+
+//Tasks modal
+.b-task-modal__overlay
+    .b-task-modal
+        .b-task-modal__header
+            .b-task-modal__name
+            .b-task-modal__color
+            .b-task-modal__story-points
+            .b-task-modal__btn-close
+        .b-task-modal__content
+            .b-task-modal__content-item
+                .b-task-modal__descr
+                    .b-task-modal__descr-header
+                    .b-task-modal__descr-textarea
+                .b-task-modal__info
+                    .b-task-modal__info-item
+                        .b-task-modal__label
+                        .b-task-modal__input
+                    .b-task-modal__info-item
+                        .b-task-modal__label
+                        .b-task-modal__input
+                    .b-task-modal__info-item
+                        .b-task-modal__label
+                        .b-task-modal__input
+                    .b-task-modal__info-item
+                        .b-task-modal__label
+                        .b-task-modal__input
+                    .b-task-modal__info-item
+                        .b-task-modal__label
+                        .b-task-modal__input
+            .b-task-modal__content-item
+                .b-checklist
+                    .b-checklist__header
+                        .b-checklist__label
+                        .b-checklist__counter
+                            .b-checklist__total
+                            .b-checklist__done
+                    .b-checklist__main
+                        .b-checklist__item
+                            .b-checklist__check
+                            .b-checklist__text
+                            .b-checklist__item-btn
+                    .b-checklist__footer
+                        .b-checklist__btn
+                        .b-checklist__input
+        .b-task-modal__footer
+            .b-task-modal__btn-del
+            .b-task-modal__btn-cancel
+            .b-task-modal__btn-save
+
+
+
+
+

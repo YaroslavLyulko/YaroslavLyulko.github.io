@@ -1,0 +1,1 @@
+$(".carousel").simpleCarousel();var acc=document.getElementsByClassName("accordion-panel__btn"),i;for(i=0;i<acc.length;i++)acc[i].onclick=function(){console.log("asdasdsad"),this.classList.toggle("active");var e=this.nextElementSibling;e.style.maxHeight?e.style.maxHeight=null:e.style.maxHeight=e.scrollHeight+"px"};

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Homework JS #19-20</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="lib/jQuery/jquery.simple-carousel.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext" rel="stylesheet">
+  <script src="https://use.fontawesome.com/186ee2716b.js"></script>
+  <script src="lib/jQuery/jquery-3.1.1.min.js"></script>
+  <script src="lib/jQuery/jquery.simple-carousel.js"></script> 
+</head>
+<body>
+
+  <div class="wrapper wrapper--white">
+    <div class="page-header container">
+      <div class="top-bar">
+        <div class="logo">
+          <a href="" class="logo_icon-link"><img src="img/logo-icon.png" alt="" class="logo__icon"></a>
+              <a href="" class="logo__title">Build Home</a></br>
+              <a href="" class="logo__subtitle">Industrial Theme</a>
+        </div>
+        <ul class="social">
+          <li class="social__item"><a href="" class="social__link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li class="social__item"><a href="" class="social__link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li class="social__item"><a href="" class="social__link"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+          <li class="social__item"><a href="" class="social__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li class="social__item"><a href="" class="social__link"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div class="nav-bar">
+        <ul class="menu">
+          <li class="menu__item"><a href="" class="menu__link menu__link--active">Home</a></li>
+          <li class="menu__item"><a href="" class="menu__link">Features</a></li>
+          <li class="menu__item"><a href="" class="menu__link">Services</a></li>
+          <li class="menu__item"><a href="" class="menu__link">News</a></li>
+          <li class="menu__item"><a href="" class="menu__link">Shop</a></li>
+        </ul>
+        <div class="search">
+          <input type="text" class="search__input" placeholder="Search...">
+          <img src="" alt="" class="search__icon">
+        </div>
+      </div>
+      <div class="carousel">
+        <div class="carousel__hider">
+          <ul class="carousel__list">
+            <li class="carousel-element"><img src="img/slide1_cr.jpg"></li>
+            <li class="carousel-element"><img src="img/slide1_cr.jpg"></li>
+            <li class="carousel-element"><img src="img/slide1_cr.jpg"></li>
+          </ul>
+        </div>
+        <p class="carousel__logo-text"><span class="carousel__logo-text--yellow">Build</span><br>your<br>business</p>
+        <ul class="pagination">
+          <li data-slide-to="1" class="pagination__item--active"></li>
+          <li data-slide-to="2" class="pagination__item"></li> 
+          <li data-slide-to="3" class="pagination__item"></li> 
+        </ul>
+        
+      </div>
+      
+    </div>
+  </div>
+  <div class="wrapper wrapper--white">
+      <ul class="features container">
+          <li class="features__item">
+              <article class="article">
+                  <div class="article__number">01</div>
+                  <div class="article__container">
+                      <img src="img/ico-settings.png" alt="" class="article__icon">
+                      <h3 class="article__title">Power Inside</h3>
+                      <p class="article__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+                      <a href="" class="article__link">Read More</a>
+                      <img src="img/ico-arrow-right.png" alt="" class="article__link-arrow">
+                  </div>
+              </article>
+          </li>
+          <li class="features__item">
+              <article class="article">
+                  <span class="article__number">02</span>
+                  <div class="article__container">
+                      <img src="img/ico-parameters.png" alt="" class="article__icon">
+                      <h3 class="article__title">New Technologies</h3>
+                      <p class="article__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+                      <a href="" class="article__link">Read More</a>
+                      <img src="img/ico-arrow-right.png" alt="" class="article__link-arrow">
+                  </div>
+              </article>
+          </li>
+          <li class="features__item">
+              <article class="article">
+                  <span class="article__number">03</span>
+                  <div class="article__container">
+                      <img src="img/ico-truck.png" alt="" class="article__icon">
+                      <h3 class="article__title">Fast Support</h3>
+                      <p class="article__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique </p>
+                      <a href="" class="article__link">Read More</a>
+                      <img src="img/ico-arrow-right.png" alt="" class="article__link-arrow">
+                  </div>
+              </article>
+          </li>
+      </ul>
+  </div>
+  <div class="wrapper wrapper--dark-gray">
+      <div class="services container">
+          <h2 class="services__header">Our Services</h2>
+          <ul class="services__body">
+              <il class="services__item">
+                  <div class="service-card">
+                      <a href="" class="service-card__img-link"><img src="img/service1.png" alt="" class="service-card__img"></a>
+                      <div class="service-card__topper"></div>
+                      <div class="service-card__plus-symbol"></div>
+                      <a href="" class="service-card__title">Schedule Services</a>
+                  </div>
+              </il>
+              <il class="services__item">
+                  <div class="service-card">
+                      <a href="" class="service-card__img-link"><img src="img/service2.png" alt="" class="service-card__img"></a>
+                      <div class="service-card__topper"></div>
+                      <div class="service-card__plus-symbol"></div>
+                      <a href="" class="service-card__title">Preventive Maintence</a>
+                  </div>
+              </il>
+              <il class="services__item">
+                  <div class="service-card">
+                      <a href="" class="service-card__img-link"><img src="img/service3.png" alt="" class="service-card__img"></a>
+                      <div class="service-card__topper"></div>
+                      <div class="service-card__plus-symbol"></div>
+                      <a href="" class="service-card__title">Tire & Wheel Services</a>
+                  </div>
+              </il>
+              <il class="services__item">
+                  <div class="service-card">
+                      <a href="" class="service-card__img-link"><img src="img/service4.png" alt="" class="service-card__img"></a>
+                      <div class="service-card__topper"></div>
+                      <div class="service-card__plus-symbol"></div>
+                      <a href="" class="service-card__title">Repair Services</a>
+                  </div>
+              </il>
+          </ul>
+      </div>
+  </div>
+  <div class="wrapper wrapper--light-gray">
+      <div class="main container">
+          <div class="news">
+              <h2 class="news__header">Latest News</h2>
+              <ul class="news__body">
+                  <li class="news__item">
+                      <div class="news-block">
+                          <img src="img/news1.png" alt="" class="news-block__img">
+                          <div class="news-block__container">
+                              <a href="" class="news-block__title">Advanced Machinery Helps Improve Quality</a>
+                              <p class="news-block__info">
+                                  by<a href="" class="news-block__author">cmsmasters</a>Comments (<a href="" class="news-bock__link-comments">6</a>)
+                              </p>
+                              <p class="news-block__text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo
+                                  et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+                              <div class="news-block__date">
+                                  <div class="news-date">
+                                      <p class="news-date__month">Jan</p>
+                                      <p class="news-date__day">23</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="news__item">
+                      <div class="news-block">
+                          <img src="img/news2.png" alt="" class="news-block__img">
+                          <div class="news-block__container">
+                              <a href="" class="news-block__title">Powerful Techniques for Advanced Service</a>
+                              <p class="news-block__info">
+                                  by<a href="" class="news-block__author">cmsmasters</a>Comments (<a href="" class="news-bock__link-comments">3</a>)
+                              </p>
+                              <p class="news-block__text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo
+                                  et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+                              <div class="news-block__date">
+                                  <div class="news-date">
+                                      <p class="news-date__month">Jan</p>
+                                      <p class="news-date__day">21</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <div class="banners-place">
+              <h2 class="banners-place__header">Banners Place</h2>
+              <ul class="banners-place__body">
+                  <li class="banners-place__item">
+                      <div class="accordion-panel">
+                          <button class="accordion-panel__btn">Accordion Panel 1</button>
+                          <div class="accordion-panel__text-container"><p class="accordion-panel__text">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et
+                              nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus
+                              et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro
+                              vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur<p></div>
+                      </div>
+                  </li>
+                  <li class="banners-place__item">
+                      <div class="accordion-panel">
+                          <button class="accordion-panel__btn">Accordion Panel 2</button>
+                          <div class="accordion-panel__text-container"><p class="accordion-panel__text">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et
+                              nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus
+                              et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro
+                              vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur<p></div>
+                      </div>
+                  </li>
+                  <li class="banners-place__item">
+                      <div class="accordion-panel">
+                          <button class="accordion-panel__btn">Accordion Panel 3</button>
+                          <div class="accordion-panel__text-container"><p class="accordion-panel__text">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et
+                              nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus
+                              et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro
+                              vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur<p></div>
+                      </div>
+                  </li>
+                  <li class="banners-place__item">
+                      <div class="accordion-panel">
+                          <button class="accordion-panel__btn">Accordion Panel 4</button>
+                          <div class="accordion-panel__text-container"><p class="accordion-panel__text">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et
+                              nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus
+                              et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro
+                              vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur<p></div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="wrapper wrapper--white">
+      <ul class="partner-logos container">
+          <li>
+              <div class="partrenlogo"><a href="" class="partner-logo__link"><img src="img/partner-logo1.png" alt="" class="partren-logo__icon"></a></div>
+          </li>
+          <li>
+              <div class="partrenlogo"><a href="" class="partner-logo__link"><img src="img/partner-logo2.png" alt="" class="partren-logo__icon"></a></div>
+          </li>
+          <li>
+              <div class="partrenlogo"><a href="" class="partner-logo__link"><img src="img/partner-logo3.png" alt="" class="partren-logo__icon"></a></div>
+          </li>
+          <li>
+              <div class="partrenlogo"><a href="" class="partner-logo__link"><img src="img/partner-logo4.png" alt="" class="partren-logo__icon"></a></div>
+          </li>
+          <li>
+              <div class="partrenlogo"><a href="" class="partner-logo__link"><img src="img/partner-logo5.png" alt="" class="partren-logo__icon"></a></div>
+          </li>
+          <li>
+              <div class="partrenlogo"><a href="" class="partner-logo__link"><img src="img/partner-logo6.png" alt="" class="partren-logo__icon"></a></div>
+          </li>
+      </ul>
+  </div>
+  <div class="wrapper wrapper--dark-gray">
+      <ul class="footer-nav container">
+          <li class="footer-nav__item">
+              <div class="nav-block">
+                  <h3 class="nav-block__header">Socials</h3>
+                  <ul class="nav-block__body">
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">Facebook</a></div>
+                      </li>
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">Flickr</a></div>
+                      </li>
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">Twitter</a></div>
+                      </li>
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">Vimeo</a></div>
+                      </li>
+                  </ul>
+              </div>
+          </li>
+          <li class="footer-nav__item">
+              <div class="nav-block">
+                  <h3 class="nav-block__header">Links</h3>
+                  <ul class="nav-block__body">
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">How to Write a Blog</a></div>
+                      </li>
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">Create a Blog in 4 Steps</a></div>
+                      </li>
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">15 Tips to Increase Traffic</a></div>
+                      </li>
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">20 Blog Post Ideas</a></div>
+                      </li>
+                  </ul>
+              </div>
+          </li>
+          <li class="footer-nav__item">
+              <div class="nav-block">
+                  <h3 class="nav-block__header">Blogroll</h3>
+                  <ul class="nav-block__body">
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">Blogs Blog</a></div>
+                      </li>
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">Roll Up Roll Up</a></div>
+                      </li>
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">Blog Free</a></div>
+                      </li>
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">Wordpress Blog</a></div>
+                      </li>
+                  </ul>
+              </div>
+          </li>
+          <li class="footer-nav__item">
+              <div class="nav-block">
+                  <h3 class="nav-block__header">About us</h3>
+                  <ul class="nav-block__body">
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">Agriculture</a></div>
+                      </li>
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">Harvest</a></div>
+                      </li>
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">Company news</a></div>
+                      </li>
+                      <li class="nav-block__item">
+                          <div class="nav-link-list"><a href="" class="nav-link-list__link">Investor relations</a></div>
+                      </li>
+                  </ul>
+              </div>
+          </li>
+      </ul>
+  </div>
+  <div class="wrapper wrapper--gray">
+    <div class="page-footer container">
+      <ul class="contacts">
+        <li class="contacts__item">
+          <div class="location">
+            <img src="img/ico-location.png" alt="" class="location__icon">
+            <p class="location__text">BuildHomeLtd.  Street Name 123   23 45 Cityname</p>
+          </div>
+        </li>
+        <li class="contacts__item">
+          <div class="phone">
+            <img src="img/ico-phone.png" alt="" class="phone__icon">
+            <p class="phone__text">+123 900 123 456</p>
+          </div>
+        </li>
+        <li class="contacts__item">
+          <div class="mail">
+            <img src="img/ico-mail.png" alt="" class="mail__icon">
+            <p class="mail__text">info@buildhome.web</p>
+          </div>
+        </li>
+      </ul>
+      <div class="legal">
+        <p class="legal__text">© 2014 Build Home</p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/scripts.js"></script>
+</body>
+</html>
