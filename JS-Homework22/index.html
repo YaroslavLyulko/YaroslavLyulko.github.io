@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Homework JS #11-12</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Result Message</h4>
+      </div>
+      <div class="modal-body" id="resultText">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="container"></div>
+
+<script type="text/template" id="tmpl">
+<!--<form action="">
+    <fieldset>-->
+      <div class="testBox">
+      <div class="testBox1__title"><%- testTitle %></div>
+      <% _.forEach (questions, function(item) { %>
+      <div class="testBox1__question"><%- item.title %></div>
+
+        <% _.forEach (item.answers, function(value) { %>
+        <div class="testBox1__answer">
+          <input type="checkbox" id="test1-answ1">
+          <label for="test1-answ1"><%- value %></label>
+        </div>
+        <%});%>
+
+      <%});%>
+      <div class="check-result">
+        <button id="btnCheckResult">Проверить мои результаты</button>
+        <!--<input type="submit" value="Проверить мои результаты">-->
+      </div>
+      </div>
+    <!--</fieldset>
+  </form>-->
+</script>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
