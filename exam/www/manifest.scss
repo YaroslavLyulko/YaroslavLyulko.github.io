@@ -1,0 +1,68 @@
+//promo
+.wrapper .wrapper--white
+.promo .container
+    .promo__logo
+    .promo__login .login-block
+        .login-block__log-in-btn
+        .login-block__sing-up-btn
+    .promo__title
+    .promo__subtitle
+    .promo__fyhp-btn
+
+//how it works
+.wrapper .wrapper--white
+.how-it-works .container
+    .how-it-works__header
+    .how-it-works__body
+        .how-it-works__item*3
+            .step
+                .step__img
+                .step__link
+                .step__title
+                .step__subtitle
+
+//partners
+.wrapper .wrapper--white
+.partners .container
+    .partners__header
+    .partners__list
+        .partners__item*4
+            .partner-card
+                .partner-card__avatar
+                .partner-card__icon
+                .partner-card__name
+                .partner-card__about-me
+    .partners__sop-btn
+
+//ideas
+.wrapper .wrapper--white
+.ideas .container
+    .ideas__header
+    .ideas__list
+        .ideas__item*7
+            .idea-card
+                .idea-card__img
+                .idea-card__title
+
+//search-partners
+.wrapper .wrapper--white
+.search-partners .container
+    .search-partners__header
+    .search-partners__question-text
+    .search-partners__input
+    .search-partners__sp-btn
+
+//footer
+.wrapper .wrapper--white
+.footer .container
+    .footer__logo
+    .footer__company-block .company-block
+        .company-block__header
+        .company-block__nav .footer-nav
+            .footer-nav__item*4
+                .footer-nav__link
+    .footer__partners-block .partners-block
+        .partners-block__header
+    .footer__designed-by-block .designed-by-block
+        .designed-by-block__designed-by-text
+        .designed-by-block__icon

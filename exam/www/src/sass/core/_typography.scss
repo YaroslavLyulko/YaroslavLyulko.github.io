@@ -1,0 +1,41 @@
+@import "tools";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+// Vars
+$title-font: 'Montserrat', sans-serif;
+$text-font: 'Roboto', sans-serif;
+$link-font: 'Raleway', Arial, sans-serif;
+
+// Rules
+h1, h2, h3, h4, h5, h6 {
+  font-family: $title-font;
+}
+
+p, input[type="text"], textarea, label {
+  font-family: $text-font;
+}
+
+a, input[type="button"], input[type="submit"], button {
+  font-family: $link-font;
+}
+
+h1 {
+  @include font-settings(xs-large);
+}
+
+h2 {
+  @include font-settings(large);
+}
+
+h3, h4, h5, h6 {
+  @include font-settings(strong);
+}
+
+p, a {
+  @include font-settings(medium);
+}
+
+a {
+  text-decoration: none;
+}

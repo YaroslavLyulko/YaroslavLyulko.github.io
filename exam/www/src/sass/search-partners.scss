@@ -1,0 +1,64 @@
+// @import "core/core";
+@import "core/tools/tools";
+// @import "core/sprite";
+
+// .features {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-column-gap: 40px;
+//     list-style-type: none;
+//     padding-top: 72px;
+//     padding-bottom: 87px;
+// }
+
+.search-partners {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: rem(39);
+
+    &__header {
+        font-family: 'Montserrat', sans-serif;
+        font-size: rem(22);
+        font-weight: 700;
+        color: $primary-dark;
+        text-align: center;
+        // min-width: rem(300);
+    }
+
+    &__question-text {
+        font-family: 'Roboto', sans-serif;
+        font-size: rem(17.95);
+        font-weight: 300;
+        color: $primary-dark;
+        margin-top: rem(15);
+        text-align: center;
+        // min-width: rem(300);
+    }
+
+    &__input {
+        border: rem(1) solid #cccccc;
+        border-radius: rem(4);
+        width: rem(278);
+        line-height: rem(40);
+        padding-left: rem(15);
+        margin-top: rem(16);
+    }
+
+    &__sp-btn {
+        background-color: transparent;
+        border: rem(2) solid $primary-accent;
+        border-radius: rem(20);
+        line-height: rem(36);
+        font-family: 'Montserrat', sans-serif;
+        font-size: rem(14);
+        font-weight: 700;
+        color: $primary-accent;
+        width: rem(276);
+        margin-top: rem(10);
+        &:hover {
+            background-color: $primary-accent;
+            color: #fff;
+        }
+    }
+}

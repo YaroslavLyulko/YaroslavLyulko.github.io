@@ -1,0 +1,83 @@
+// @import "core/core";
+@import "core/tools/tools";
+// @import "core/sprite";
+
+// .features {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-column-gap: 40px;
+//     list-style-type: none;
+//     padding-top: 72px;
+//     padding-bottom: 87px;
+// }
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: rem(40);
+    border-top: rem(4) solid $primary-accent;
+
+    &__logo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: rem(16.92);
+        font-weight: 700;
+        color: $primary-accent;
+        text-align: center;
+        margin-top: rem(16);
+    }
+}
+
+.company-block {
+    margin-top: rem(19);
+    &__header {
+        font-family: 'Montserrat', sans-serif;
+        font-size: rem(14.02);
+        font-weight: 700;
+        color: $primary-dark;
+        text-align: center;
+    }
+}
+
+.footer-nav {
+    list-style-type: none;
+    margin-top: rem(7);
+    &__item {
+        display: inline;
+        margin-right: rem(14);
+    }
+    &__link {
+        font-family: 'Roboto', sans-serif;
+        font-size: rem(14.02);
+        font-weight: 300;
+        color: $secondary-gray;
+    }
+}
+
+.partners-block {
+    margin-top: rem(17);
+    &__header {
+        font-family: 'Montserrat', sans-serif;
+        font-size: rem(14.02);
+        font-weight: 700;
+        color: $primary-dark;
+        text-align: center;
+    }
+}
+
+.designed-by-block {
+    margin-top: rem(17);
+    &__designed-by-text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: rem(9.95);
+        font-weight: 700;
+        color: $primary-gray;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: rem(1.5);
+    }
+    &__icon{
+        margin-top: rem(10);
+        margin-bottom: rem(18);
+    }
+}

@@ -1,0 +1,1 @@
+"use strict";var elem=document.querySelector(".grid"),msnry=new Masonry(elem,{itemSelector:".grid-item",columnWidth:300,gutter:10});console.log("Masonry loaded");
